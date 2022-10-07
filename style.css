@@ -189,14 +189,6 @@ body {
     margin: 0 auto;
 }
 
-.image-area h2 {
-    width: 200px;
-    margin: 10px auto;
-    background-color: white;
-    color: black;
-    border-radius: 4px;
-}
-
 .secondary_heading {
     font-family: 'Alkalami', serif;
     color: white;
@@ -261,4 +253,46 @@ body {
     font-size: 25px;
     font-family: 'Alkalami', serif;
     color: white;
+}
+
+.info-area {
+    /* background-color: rgba(226, 225, 224, 0.468); */
+}
+
+.main-info {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.info-area h2 {
+    width: 400px;
+    background-color: rgba(0, 128, 0, 0.797);
+    color: white;
+}
+
+.info-area ul li {
+    list-style: none;
+}
+
+.achivements {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* gap: 120px */
+    column-gap: 120px;
+}
+
+.achivements img {
+    width: 400px;
+    height: 300px;
+}
+
+.achivements-div {
+    display: flex;
+    flex-direction: column;
+}
+
+.achivements-div h5 {
+    font-family: 'Alkalami', serif;
+    font-size: 15px;
 }
