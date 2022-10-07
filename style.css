@@ -68,7 +68,6 @@ section h5 {
 
 footer {
     background-color: #333;
-    overflow: hidden;
 }
 
 footer a {
@@ -256,7 +255,7 @@ body {
 }
 
 .info-area {
-    /* background-color: rgba(226, 225, 224, 0.468); */
+    margin-bottom: 100px;
 }
 
 .main-info {
@@ -295,4 +294,15 @@ body {
 .achivements-div h5 {
     font-family: 'Alkalami', serif;
     font-size: 15px;
+}
+
+.main-footer {
+    display: flex;
+    width: 60%;
+    margin: 0 auto;
+    justify-content: space-around;
+}
+
+.main-footer ul li {
+    list-style: none;
 }
