@@ -43,18 +43,11 @@ h2 {
     text-align: center;
     font-size: 40px;
     padding: 25px;
-    background-color: bisque;
     font-weight: bold;
-    border: 2.5px solid black;
-
-}
-
-section:nth-child(even) {
-    background-color: white;
 }
 
 section {
-    min-height: 100vh;
+    /* max-height: 100vh; */
 }
 
 video {
@@ -118,6 +111,14 @@ header {
     background-color: black;
 }
 
+h2 {
+    width: 200px;
+    margin: 10px auto;
+    background-color: rgba(0, 0, 0, 0.847);
+    color: white;
+    border-radius: 4px;
+}
+
 .flex-align-right {
     margin-left: auto;
 }
@@ -144,10 +145,24 @@ body {
     height: 424px;
 }
 
+.video-area {
+    margin-bottom: 200px;
+}
+
 .image-area {
     display: flex;
     flex-direction: column;
     gap: 30px;
+    background-color: rgba(0, 0, 0, 0.847);
+    padding-top: 50px;
+    padding-bottom: 150px;
+    margin-bottom: 100px;
+}
+
+.image-back-div {
+    background-color: white;
+    clip-path: polygon(0 0, 100% 0, 93% 47%, 100% 100%, 70% 100%, 30% 100%, 0 100%, 7% 48%);
+    padding: 100px 0;
 }
 
 .image-area img {
@@ -175,12 +190,75 @@ body {
 }
 
 .image-area h2 {
-    background: #F47340;
-    outline: none;
-    border: 1px solid rgba(47, 209, 98, 0.667);
-    color: white;
+    width: 200px;
+    margin: 10px auto;
+    background-color: white;
+    color: black;
+    border-radius: 4px;
 }
 
 .secondary_heading {
     font-family: 'Alkalami', serif;
+    color: white;
+}
+
+.stats-area {
+    margin: 150px 0;
+}
+
+.stats-background-div {
+    background: url("Image/stats-background.jpg")no-repeat center center/cover rgba(0, 0, 0, 0.518);
+    background-blend-mode: darken;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stats-main-content {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 500px;
+    width: 80%;
+}
+
+.extra-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.stats-table th {
+    font-size: 25px;
+    font-weight: bolder;
+    color: white;
+    background-color: tomato;
+    padding: 0px 15px;
+}
+
+.stats-table td {
+    font-size: 20px;
+    color: black;
+    background-color: white;
+}
+
+.extra-info img {
+    width: 300px;
+    height: 200px;
+    border-radius: 20px;
+    transition: transform .2s ease;
+}
+
+.extra-info img:hover {
+    transform: scale(1.1);
+    filter: brightness(110%);
+}
+
+.stats-area .info-label {
+    font-weight: bold;
+    font-size: 25px;
+    font-family: 'Alkalami', serif;
+    color: white;
 }
