@@ -1,5 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkalami&display=swap');
+
 * {
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
 
@@ -42,6 +46,7 @@ h2 {
     background-color: bisque;
     font-weight: bold;
     border: 2.5px solid black;
+
 }
 
 section:nth-child(even) {
@@ -137,4 +142,45 @@ body {
     max-width: 750px;
     width: 90%;
     height: 424px;
+}
+
+.image-area {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.image-area img {
+    width: 300px;
+    height: 200px;
+    border-radius: 15px;
+    transition: transform .2s ease-in-out;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 1px 0px, rgba(60, 64, 67, 0.15) 0px 1px 1px 1px;
+}
+
+.image-area img:hover {
+    box-shadow: none;
+    transform: scale(1.2);
+    filter: brightness(120%);
+}
+
+.image-area .img-row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    width: 90%;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.image-area h2 {
+    background: #F47340;
+    outline: none;
+    border: 1px solid rgba(47, 209, 98, 0.667);
+    color: white;
+}
+
+.secondary_heading {
+    font-family: 'Alkalami', serif;
 }
