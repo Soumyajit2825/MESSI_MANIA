@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Alkalami&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alkalami&family=Mukta&display=swap');
 
 * {
     box-sizing: border-box;
@@ -13,24 +13,38 @@ body {
 }
 
 nav {
-    background-color: #333;
+    background-color: #b31c1c;
     overflow: hidden;
 }
 
+.main-nav {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
 nav a {
-    font-size: large;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bolder;
-    font-style: italic;
+    font-family: 'Mukta', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
     text-decoration: none;
-    padding: 30px;
+    padding: 0px 30px;
     text-align: center;
-    float: left;
     color: white;
+    text-decoration: none;
 }
 
 nav a:hover {
-    background-color: crimson;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px 30px;
+}
+
+.nav:hover {
+    height: 20px;
 }
 
 main {
@@ -146,6 +160,7 @@ body {
 
 .video-area {
     margin-bottom: 200px;
+    margin-top: 100px;
 }
 
 .image-area {
