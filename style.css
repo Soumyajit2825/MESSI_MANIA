@@ -260,16 +260,10 @@ h2 {
 }
 
 .image-area img {
-<<<<<<< HEAD
-	width: 400px;
-	height: 300px;
-	border-radius: 25px;
-=======
 	width: 300px;
 	height: 200px;
 	border-radius: 15px;
 	background: white;
->>>>>>> 4b37b92270178756fbd65ce36077c8b0b15c3b30
 	transition: transform 0.2s ease-in-out;
 	box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 1px 0px,
 		rgba(60, 64, 67, 0.15) 0px 1px 1px 1px;
