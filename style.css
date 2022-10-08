@@ -215,6 +215,7 @@ h2 {
 	padding-bottom: 0px;
 	margin-bottom: 0px;
 	margin-top: 0px;
+	background-color: #AFD295;
 }
 
 .image-area {
@@ -226,9 +227,25 @@ h2 {
 	padding-bottom: 5px;
 	margin-bottom: 0px;
 }
+.top-scroll{
+	display: none;
+  	position: fixed;
+  	bottom: 20px;
+  	right: 30px;
+	z-index: 99;
+	border: none;
+	outline: none;
+	background-color: white;
+	cursor: pointer;
+	border-radius: 4px
+}
+
+.top-scroll:hover{
+	background-color: rgb(234, 72, 72);
+}
 
 .image-back-div {
-	background-color: var(--imageBg);
+	background-color: #116466;;
 	clip-path: polygon(
 		0 0,
 		100% 0,
@@ -243,9 +260,16 @@ h2 {
 }
 
 .image-area img {
+<<<<<<< HEAD
 	width: 400px;
 	height: 300px;
 	border-radius: 25px;
+=======
+	width: 300px;
+	height: 200px;
+	border-radius: 15px;
+	background: white;
+>>>>>>> 4b37b92270178756fbd65ce36077c8b0b15c3b30
 	transition: transform 0.2s ease-in-out;
 	box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 1px 0px,
 		rgba(60, 64, 67, 0.15) 0px 1px 1px 1px;
@@ -352,6 +376,7 @@ h2 {
 }
 
 .main-info {
+	background-color: #DA7B93;
 	width: 80%;
 	margin: 0 auto;
 }
@@ -361,7 +386,13 @@ h2 {
 	background-color: rgba(0, 128, 0, 0.797);
 	color: white;
 }
-
+.info-area h3{
+	font-family: 'Brush Script MT', cursive;
+}
+.info-area h5{
+	color:#b31c1c;
+	font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+}
 .info-area ul li {
 	list-style: none;
 }
