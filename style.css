@@ -226,6 +226,22 @@ h2 {
 	padding-bottom: 5px;
 	margin-bottom: 0px;
 }
+.top-scroll{
+	display: none;
+  	position: fixed;
+  	bottom: 20px;
+  	right: 30px;
+	z-index: 99;
+	border: none;
+	outline: none;
+	background-color: white;
+	cursor: pointer;
+	border-radius: 4px
+}
+
+.top-scroll:hover{
+	background-color: rgb(234, 72, 72);
+}
 
 .image-back-div {
 	background-color: var(--imageBg);
