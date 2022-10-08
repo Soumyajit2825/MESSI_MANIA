@@ -249,7 +249,6 @@ body {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	height: 500px;
 	width: 80%;
 }
 
@@ -344,6 +343,8 @@ body {
 .main-footer ul li {
 	list-style: none;
 }
+
+/* =============== MEDIA QUERIES (SMALL DEVICES) =============== */
 @media (max-width: 745px) {
 	.navbar .main-nav {
 		display: none;
@@ -426,5 +427,13 @@ body {
 		top: 18px;
 		width: 0%;
 		left: 50%;
+	}
+}
+
+/* =============== MEDIA QUERIES (MEDIUM DEVICES) =============== */
+@media screen and (max-width: 1220px) {
+    .stats-main-content {
+		flex-direction: column;
+		gap: 5rem;
 	}
 }
