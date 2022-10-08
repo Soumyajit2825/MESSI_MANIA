@@ -92,6 +92,17 @@ nav a:hover {
 .switch-container div .ball {
 	display: none;
 }
+.more-img:hover{
+	
+	transition: transform 0.2s ease-in-out;
+	box-shadow: rgba(60, 64, 67, 0.3) 0px 2px 2px 0px,
+		rgba(60, 64, 67, 0.15) 0px 2px 2px 2px;
+
+		/* box-shadow: none; */
+		transform: scale(1.1);
+		filter: brightness(120%);
+	
+}
 
 main {
 	/* background-color:darkorchid; */
@@ -287,7 +298,7 @@ h2 {
 
 .secondary_heading {
 	font-family: "Alkalami", serif;
-	color: white;
+	color: rgb(205, 165, 32);
 }
 
 .stats-area {
@@ -370,15 +381,16 @@ h2 {
 }
 
 .main-info {
-	background-color: #DA7B93;
-	width: 80%;
+	background: rgb(139, 134, 174);
+	background: radial-gradient(circle, rgb(136, 128, 158) 0%, rgb(144, 159, 177) 100%);
+
+	width: 100%;
 	margin: 0 auto;
 }
 
 .info-area h2 {
 	width: 400px;
-	background-color: rgba(0, 128, 0, 0.797);
-	color: white;
+	
 }
 .info-area h3{
 	font-family: 'Brush Script MT', cursive;
