@@ -1,5 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Alkalami&family=Mukta&display=swap");
 
+.light {
+	--bodyBg: #fff;
+	--sectionEven: #fff;
+	--heading2: #fff;
+	--imageBg: #fff;
+	--tdBg: #fff;
+	--mainText: #333;
+}
+.dark {
+	--bodyBg: #333;
+	--sectionEven: #333;
+	--heading2: #333;
+	--imageBg: #333;
+	--tdBg: #333;
+	--mainText: #fff;
+}
 * {
 	box-sizing: border-box;
 	box-sizing: border-box;
@@ -14,17 +30,15 @@ body {
 }
 
 nav {
-	background-color: #333;
 	overflow: hidden;
 	transition: height ease-in-out 3s;
-	height: auto;
 	background-color: #b31c1c;
 	overflow: hidden;
+	position: relative;
 }
 
 .main-nav {
 	width: 100%;
-	margin: 0 auto;
 	padding: 20px 0;
 }
 
@@ -36,7 +50,6 @@ nav a {
 	text-decoration: none;
 	padding: 30px;
 	text-align: center;
-	float: left;
 	color: white;
 }
 
@@ -45,23 +58,57 @@ nav a:hover {
 	color: black;
 	background-color: white;
 }
+.switch-container {
+	position: absolute;
+	top: 15px;
+	right: 10px;
+}
+
+.switch-container div {
+	background-image: url("./Image//stars.webp");
+	display: flex;
+	width: 75px;
+	height: 35px;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 6px;
+	background-color: rgb(114, 33, 75);
+	border-radius: 50px;
+	cursor: pointer;
+	position: relative;
+}
+.switch-container div i {
+	font-size: 18px;
+}
+.switch-container div .fa-sun {
+	color: gold;
+	transition: 0.8s;
+}
+.switch-container div .fa-moon {
+	color: #fff;
+	transition: 0.8s;
+	opacity: 0;
+}
+.switch-container div .ball {
+	display: none;
+}
 
 main {
 	/* background-color:darkorchid; */
 	text-align: center;
+	background-color: var(--bodyBg);
+	color: var(--mainText);
 }
 
 h2 {
 	text-align: center;
 	font-size: 40px;
 	padding: 25px;
-	background-color: bisque;
 	font-weight: bold;
-	border: 2.5px solid black;
 }
 
 section:nth-child(even) {
-	background-color: white;
+	background-color: var(--sectionEven);
 }
 
 section {
@@ -71,7 +118,6 @@ section {
 	padding: 25px;
 	font-weight: bold;
 }
-
 video {
 	padding: 5px;
 }
@@ -110,6 +156,7 @@ td {
 	border-collapse: collapse;
 	padding: 10px;
 	border-spacing: 10px;
+	color: white;
 }
 
 th {
@@ -152,10 +199,6 @@ h2 {
 	box-sizing: border-box;
 }
 
-body {
-	font-family: sans-serif;
-}
-
 .carousel-cell {
 	width: 66%;
 	margin-right: 10px;
@@ -185,7 +228,7 @@ body {
 }
 
 .image-back-div {
-	background-color: white;
+	background-color: var(--imageBg);
 	clip-path: polygon(
 		0 0,
 		100% 0,
@@ -270,7 +313,7 @@ body {
 .stats-table td {
 	font-size: 20px;
 	color: black;
-	background-color: white;
+	background-color: var(--tdBg);
 }
 
 .extra-info img {
@@ -426,5 +469,8 @@ body {
 		top: 18px;
 		width: 0%;
 		left: 50%;
+	}
+	.switch-container {
+		top: 30px;
 	}
 }
