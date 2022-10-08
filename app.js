@@ -11,8 +11,9 @@ navIcon.addEventListener("click", () => {
 	navIcon.classList.toggle("open");
 });
 
-// let ltheme = localStorage.getItem("tme");
-let theme = "light";
+let ltheme = localStorage.getItem("theme");
+console.log(ltheme);
+let theme = ltheme === null ? "light" : ltheme;
 
 _switch.addEventListener("click", () => {
 	if (theme === "light") {
@@ -28,10 +29,23 @@ _switch.addEventListener("click", () => {
 		moon.style.opacity = "0";
 		theme = "light";
 	}
-	document.body.className = theme;
 });
 
-// setInterval(() => {
-// 	// localStorage.setItem("theme", theme);
-// 	// console.log(theme);
-// }, 500);
+setInterval(() => {
+	document.body.className = localStorage.getItem("theme");
+	localStorage.setItem("theme", theme);
+}, 1);
+window.onload = () => {
+	if (ltheme === "light") {
+		sun.style.transform = "translateX(0)";
+		sun.style.opacity = "1";
+		moon.style.transform = "translateX(0)";
+		moon.style.opacity = "0";
+	}
+	if (ltheme === "dark") {
+		sun.style.transform = "translateX(45px) ";
+		sun.style.opacity = "0";
+		moon.style.transform = "translateX(-45px)";
+		moon.style.opacity = "1";
+	}
+};
