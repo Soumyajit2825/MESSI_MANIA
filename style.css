@@ -239,21 +239,30 @@ h2 {
 	margin-bottom: 0px;
 }
 .top-scroll{
-	display: none;
+	width: 105px;
+	height: 105px;
   	position: fixed;
-  	bottom: 20px;
-  	right: 30px;
+  	bottom: 50px;
+  	right: 50px;
 	z-index: 99;
 	border: none;
 	outline: none;
-	background-color: white;
 	cursor: pointer;
 	border-radius: 4px
 }
-
-.top-scroll:hover{
-	background-color: rgb(234, 72, 72);
+.top-img{
+	position: fixed;
+  	bottom: 16px;
+  	right: 23px;
+	
 }
+
+.top-img:hover{
+	transform: scale(1.1);
+	transition: transform 0.2s ease-in-out;
+}
+
+
 
 .image-back-div {
 	background-color: #116466;;
