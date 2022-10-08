@@ -23,7 +23,7 @@ nav {
 }
 
 .main-nav {
-	width: 90%;
+	width: 100%;
 	margin: 0 auto;
 	padding: 20px 0;
 }
@@ -41,28 +41,9 @@ nav a {
 }
 
 nav a:hover {
-	background-color: crimson;
-	font-family: "Mukta", sans-serif;
-	font-size: 20px;
-	font-weight: bold;
-	text-decoration: none;
-	padding: 0px 30px;
-	text-align: center;
-	color: white;
-	text-decoration: none;
-}
-
-nav a:hover {
 	text-decoration: none;
 	color: black;
 	background-color: white;
-	border: 1px solid black;
-	border-radius: 5px;
-	padding: 5px 30px;
-}
-
-.nav:hover {
-	height: 20px;
 }
 
 main {
@@ -362,16 +343,15 @@ body {
 	list-style: none;
 }
 @media (max-width: 745px) {
-	.navbar a {
+	.navbar .main-nav {
 		display: none;
 	}
-	.navBarMobile {
+	.navBarMobile .main-nav {
 		display: flex !important;
 		flex-direction: column;
 	}
 	.navBarMobile a {
 		padding: 10px;
-		display: block;
 	}
 
 	#nav-icon {
@@ -394,7 +374,7 @@ body {
 		position: absolute;
 		height: 3px;
 		width: 100%;
-		background: #d3531a;
+		background: #fff;
 		border-radius: 9px;
 		opacity: 1;
 		left: 0;
