@@ -5,6 +5,7 @@
 	box-sizing: border-box;
 	padding: 0;
 	margin: 0;
+	scroll-behavior: smooth;
 }
 
 body {
@@ -17,9 +18,11 @@ nav {
 	background-color: #333;
 	overflow: hidden;
 	transition: height ease-in-out 3s;
-	height: auto;
+
 	background-color: #b31c1c;
+	width: 100%;
 	overflow: hidden;
+	z-index: 50;
 }
 
 .main-nav {
@@ -36,7 +39,7 @@ nav a {
 	text-decoration: none;
 	padding: 30px;
 	text-align: center;
-	float: left;
+
 	color: white;
 }
 
@@ -356,9 +359,9 @@ body {
 
 	#nav-icon {
 		width: 30px;
-		height: 30px;
+		height: 20px;
 		position: relative;
-		margin: 30px;
+		margin: 10px;
 		-webkit-transform: rotate(0deg);
 		-moz-transform: rotate(0deg);
 		-o-transform: rotate(0deg);
