@@ -65,7 +65,7 @@ section:nth-child(even) {
 }
 
 section {
-	min-height: 100vh;
+	min-height: 70vh;
 	text-align: center;
 	font-size: 40px;
 	padding: 25px;
