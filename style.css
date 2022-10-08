@@ -32,21 +32,41 @@ body {
 nav {
 	overflow: hidden;
 	transition: height ease-in-out 3s;
-	background-color: #b31c1c;
+	background-color:black;
 	overflow: hidden;
 	position: relative;
 }
 
 .main-nav {
 	width: 100%;
-	padding: 20px 0;
+	padding: 20px ;
+	
+	/* changes */
+	background-color:#1C6758;
+	border-radius:20px;
+	border:4px solid #06283D;
+	font-style: normal;
+
+}
+
+.padding-search{
+
+	margin-left: 28%;
+	border-radius:10px;
+
+}
+
+.search-img{
+	width :10px;
+	z-index: 10;
+
 }
 
 nav a {
 	font-size: large;
 	font-family: Arial, Helvetica, sans-serif;
 	font-weight: bolder;
-	font-style: italic;
+	
 	text-decoration: none;
 	padding: 30px;
 	text-align: center;
