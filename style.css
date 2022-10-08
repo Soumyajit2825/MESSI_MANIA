@@ -215,6 +215,7 @@ h2 {
 	padding-bottom: 0px;
 	margin-bottom: 0px;
 	margin-top: 0px;
+	background-color: #AFD295;
 }
 
 .image-area {
@@ -244,7 +245,7 @@ h2 {
 }
 
 .image-back-div {
-	background-color: var(--imageBg);
+	background-color: #116466;;
 	clip-path: polygon(
 		0 0,
 		100% 0,
@@ -262,6 +263,7 @@ h2 {
 	width: 300px;
 	height: 200px;
 	border-radius: 15px;
+	background: white;
 	transition: transform 0.2s ease-in-out;
 	box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 1px 0px,
 		rgba(60, 64, 67, 0.15) 0px 1px 1px 1px;
@@ -355,6 +357,7 @@ h2 {
 }
 
 .main-info {
+	background-color: #DA7B93;
 	width: 80%;
 	margin: 0 auto;
 }
@@ -364,7 +367,13 @@ h2 {
 	background-color: rgba(0, 128, 0, 0.797);
 	color: white;
 }
-
+.info-area h3{
+	font-family: 'Brush Script MT', cursive;
+}
+.info-area h5{
+	color:#b31c1c;
+	font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+}
 .info-area ul li {
 	list-style: none;
 }
