@@ -37,6 +37,15 @@ nav {
   position: relative;
 }
 
+.navbar { background-color: #484848; }
+.navbar .navbar-nav  { color: rgb(76, 76, 76); }
+.navbar .navbar-nav .nav-link:hover { color: #fbc531; }
+.naav{margin-top: 7px;}
+
+
+
+
+
 .main-nav {
   width: 100%;
   padding: 20px 0;
