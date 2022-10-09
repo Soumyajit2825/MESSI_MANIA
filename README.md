@@ -15,6 +15,7 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 ## Contributors
   
 Here are the current contributors to this [project](https://github.com/Soumyajit2825/MESSI_MANIA).
+
 <a href="https://github.com/Soumyajit2825/MESSI_MANIA/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=Soumyajit2825/MESSI_MANIA" />
 </a>  <br>
