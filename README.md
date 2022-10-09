@@ -1,4 +1,7 @@
 # MESSI_MANIA
+
+![image](https://user-images.githubusercontent.com/104025165/194740457-54703d68-0e60-4f8e-961e-538e3866a7ef.png)
+
 A simple fan made web-page of LIONEL MESSI.
 
 Anyone can contribute in this project
@@ -8,8 +11,17 @@ I want some better changes in this website
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 ## Contributing
+* [Soumyajit2825](https://github.com/Soumyajit2825)
+* [21omkarsase](https://github.com/21omkarsase)
+* [chimoski](https://github.com/chimoski)
+* [shubhamrawat090](https://github.com/shubhamrawat090)
+* [yuvi2565](https://github.com/yuvi2565)
+* [pravincoder](https://github.com/pravincoder)
+* [Anant2961](https://github.com/Anant2961)
+* [Rohan-A-V](https://github.com/Rohan-A-V)
+* [Potato-29](https://github.com/Potato-29)
+* [smitioswal](https://github.com/smitioswal)
 
-Hi there! We're thrilled that you'd like to contribute to this project. Your help is essential for keeping it great.
 
 ## Issues and PRs
 
