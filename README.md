@@ -1,5 +1,5 @@
 # MESSI_MANIA
-
+Here's a sneak peek of the website.
 ![image](https://user-images.githubusercontent.com/104025165/194740457-54703d68-0e60-4f8e-961e-538e3866a7ef.png)
 
 A simple fan made web-page of LIONEL MESSI.
@@ -14,6 +14,11 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 ## Contributors
 
+## Contributers  
+Here are the current contributors to this [project](https://github.com/Soumyajit2825/MESSI_MANIA).
+<a href="https://github.com/Soumyajit2825/MESSI_MANIA/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=Soumyajit2825/MESSI_MANIA" />
+</a>  <br>
 - [Soumyajit2825](https://github.com/Soumyajit2825)
 - [21omkarsase](https://github.com/21omkarsase)
 - [chimoski](https://github.com/chimoski)
