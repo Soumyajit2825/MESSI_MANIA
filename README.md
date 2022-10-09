@@ -12,23 +12,24 @@ I want some better changes in this website
 
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-## Contributors
-  
-Here are the current contributors to this [project](https://github.com/Soumyajit2825/MESSI_MANIA).
+## Contributors ✨https://github.com/yuvi2565
 
-<a href="https://github.com/Soumyajit2825/MESSI_MANIA/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=Soumyajit2825/MESSI_MANIA" />
-</a>  <br>
-- [Soumyajit2825](https://github.com/Soumyajit2825)
-- [21omkarsase](https://github.com/21omkarsase)
-- [chimoski](https://github.com/chimoski)
-- [shubhamrawat090](https://github.com/shubhamrawat090)
-- [yuvi2565](https://github.com/yuvi2565)
-- [pravincoder](https://github.com/pravincoder)
-- [Anant2961](https://github.com/Anant2961)
-- [Rohan-A-V](https://github.com/Rohan-A-V)
-- [Potato-29](https://github.com/Potato-29)
-- [smitioswal](https://github.com/smitioswal)
+Thanks goes to these wonderful people 💜
+<table>
+  <tr>
+    <td align="center"><a href="https://github.com/Soumyajit2825"><img src="https://avatars.githubusercontent.com/u/100519291?v=4" width="100px;" alt=""/><br /><sub><b>Soumyajit Mondal</b></sub></a><br /><a href="#maintenance-Tlazypanda" title="Maintenance">🚧</a></td>
+    <td align="center"><a href="https://github.com/21omkarsase"><img src="https://avatars.githubusercontent.com/u/81282394?v=4" width="100px;" alt=""/><br /><sub><b>Omkar Sase</b></sub></a><br /><a title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/chimoski"><img src="https://avatars.githubusercontent.com/u/85540091?v=4" width="100px;" alt=""/><br /><sub><b>Prince Chimaobi</b></sub></a><br /><a  title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/shubhamrawat090"><img src="https://avatars.githubusercontent.com/u/97338915?v=4" width="100px;" alt=""/><br /><sub><b>Shubham Rawat</b></sub></a><br /> <a  title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/yuvi2565"><img src="https://avatars.githubusercontent.com/u/76115770?v=4" width="100px;" alt=""/><br /><sub><b>Yuvi2565</b></sub></a><br /><a  title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/pravincoder"><img src="https://avatars.githubusercontent.com/u/85897421?v=4" width="100px;" alt=""/><br /><sub><b>Pravin</b></sub></a><br /><a title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/Anant2961"><img src="https://avatars.githubusercontent.com/u/85897421?v=4" width="100px;" alt=""/><br /><sub><b>Anant2961</b></sub></a><br /><a title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/Rohan-A-V"><img src="https://avatars.githubusercontent.com/u/85897421?v=4" width="100px;" alt=""/><br /><sub><b>Rohan A V</b></sub></a><br /><a title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/Potato-29"><img src="https://avatars.githubusercontent.com/u/85897421?v=4" width="100px;" alt=""/><br /><sub><b>Prayas Ahir</b></sub></a><br /><a title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/smitioswal"><img src="https://avatars.githubusercontent.com/u/85897421?v=4" width="100px;" alt=""/><br /><sub><b>smitioswal</b></sub></a><br /><a title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/BibhavPaudel"><img src="https://avatars.githubusercontent.com/u/85897421?v=4" width="100px;" alt=""/><br /><sub><b>BibhavPaudel</b></sub></a><br /><a title="Code">💻</a></td>
+  </tr>
+  </table>
 
 ## Issues and PRs
 
