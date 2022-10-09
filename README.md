@@ -9,19 +9,21 @@ Anyone can contribute in this project
 I want some better changes in this website
 
 ## Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-## Contributing
-* [Soumyajit2825](https://github.com/Soumyajit2825)
-* [21omkarsase](https://github.com/21omkarsase)
-* [chimoski](https://github.com/chimoski)
-* [shubhamrawat090](https://github.com/shubhamrawat090)
-* [yuvi2565](https://github.com/yuvi2565)
-* [pravincoder](https://github.com/pravincoder)
-* [Anant2961](https://github.com/Anant2961)
-* [Rohan-A-V](https://github.com/Rohan-A-V)
-* [Potato-29](https://github.com/Potato-29)
-* [smitioswal](https://github.com/smitioswal)
 
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+## Contributors
+
+- [Soumyajit2825](https://github.com/Soumyajit2825)
+- [21omkarsase](https://github.com/21omkarsase)
+- [chimoski](https://github.com/chimoski)
+- [shubhamrawat090](https://github.com/shubhamrawat090)
+- [yuvi2565](https://github.com/yuvi2565)
+- [pravincoder](https://github.com/pravincoder)
+- [Anant2961](https://github.com/Anant2961)
+- [Rohan-A-V](https://github.com/Rohan-A-V)
+- [Potato-29](https://github.com/Potato-29)
+- [smitioswal](https://github.com/smitioswal)
 
 ## Issues and PRs
 
@@ -41,16 +43,19 @@ We'd also love PRs. If you're thinking of a large PR, we advise opening up an is
 **1.** Fork the repository by clicking on the Fork symbol at the top right corner.
 
 **2.** Clone the forked repository.
+
 ```
    git clone https://github.com/Soumyajit2825/MESSI_MANIA.git
 ```
 
 **3.** Navigate to the project directory.
+
 ```
    cd MESSI_MANIA
 ```
 
 **4.** Create a new branch:
+
 ```
    git checkout -b YourBranchName
 ```
@@ -75,26 +80,31 @@ We'd also love PRs. If you're thinking of a large PR, we advise opening up an is
 **Note** If anyone contributes to this repository, then the changes will not be reflected in your local repository. For that:
 
 **9.** Setup a reference(remote) to the original repository to get all the changes from the remote.
+
 ```
    git remote add upstream https://github.com/Soumyajit2825/MESSI_MANIA.git
 ```
 
 **10.** Check the remotes for this repository.
+
 ```
    git remote -v
 ```
 
 **11.** Fetching from the remote repository will bring in its branches and their respective commits.
+
 ```
    git fetch upstream
 ```
 
 **12.** Make sure that you're on your master branch.
+
 ```
    git checkout master
 ```
 
 **13.** Now that we have fetched the upstream repository, we want to merge its changes into our local branch. This will bring that branch into sync with the upstream, without losing our local changes.
+
 ```
    git merge upstream/master
 ```
@@ -117,4 +127,5 @@ Work in Progress pull requests are also welcome to get feedback early on, or if 
 Please make sure to update tests as appropriate.
 
 ## License
+
 [MIT](https://choosealicense.com/licenses/mit/)
