@@ -1,6 +1,6 @@
 # MESSI_MANIA
 Here's a sneak peek of the website.
-![image](https://user-images.githubusercontent.com/104025165/194740457-54703d68-0e60-4f8e-961e-538e3866a7ef.png)
+![image](https://github.com/Soumyajit2825/MESSI_MANIA/blob/main/Image/sneek.jpg)
 
 A simple fan made web-page of LIONEL MESSI.
 
