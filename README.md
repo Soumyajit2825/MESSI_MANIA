@@ -13,8 +13,7 @@ I want some better changes in this website
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
 ## Contributors
-
-## Contributers  
+  
 Here are the current contributors to this [project](https://github.com/Soumyajit2825/MESSI_MANIA).
 <a href="https://github.com/Soumyajit2825/MESSI_MANIA/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=Soumyajit2825/MESSI_MANIA" />
