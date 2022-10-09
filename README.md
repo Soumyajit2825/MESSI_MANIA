@@ -17,7 +17,7 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 Thanks goes to these wonderful people 💜
 <table>
   <tr>
-    <td align="center"><a href="https://github.com/Soumyajit2825"><img src="https://avatars.githubusercontent.com/u/100519291?v=4" width="100px;" alt=""/><br /><sub><b>Soumyajit Mondal</b></sub></a><br /><a href="#maintenance-Tlazypanda" title="Maintenance">🚧</a></td>
+    <td align="center"><a href="https://github.com/Soumyajit2825"><img src="https://avatars.githubusercontent.com/u/100519291?v=4" width="100px;" alt=""/><br /><sub><b>Soumyajit Mondal</b></sub></a><br /><a href="#maintenance-Tlazypanda" title="Maintenance">🚧✍️🖥️</a></td>
     <td align="center"><a href="https://github.com/21omkarsase"><img src="https://avatars.githubusercontent.com/u/77478864?v=4" width="100px;" alt=""/><br /><sub><b>Omkar Sase</b></sub></a><br /><a title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/chimoski"><img src="https://avatars.githubusercontent.com/u/93938145?v=4" width="100px;" alt=""/><br /><sub><b>Prince Chimaobi</b></sub></a><br /><a  title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/shubhamrawat090"><img src="https://avatars.githubusercontent.com/u/58658277?v=4" width="100px;" alt=""/><br /><sub><b>Shubham Rawat</b></sub></a><br /> <a  title="Code">💻</a></td>
