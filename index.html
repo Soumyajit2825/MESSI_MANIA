@@ -17,6 +17,13 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <!-- linking css file to html file -->
   <style>
     
@@ -39,15 +46,49 @@
    </div>
 
     </div>
-    <div class="main-nav">
-      <a href="#HOME">Home</a>
+    <!-- <div class="main-nav"> -->
+      <!-- <a href="#HOME">Home</a>
       <a href="#VIDEOS">Videos</a>
       <a href="#PHOTOS">Photos</a>
       <a href="#STATS">Stats</a>
       <a href="#MORE">More</a>
-      <a href="#" class="flex-align-right">Log In/Sign Up</a>
+      <a href="#" class="flex-align-right">Log In/Sign Up</a> -->
+      
+        <!--- Navbar --->
+        <nav class="navbar navbar-expand-lg">
+          <div class="container">
+            <a class="naav navbar-brand text-white font-weight-bold" href="#">Messi Mania</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nvbCollapse" aria-controls="nvbCollapse">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="nvbCollapse">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item pl-1">
+                  <a class="nav-link" href="#HOME"><i class="fa fa-home fa-fw mr-1"></i> Home</a>
+                </li>
+                <li class="nav-item pl-1">
+                  <a class="nav-link" href="#VIDEOS"><i class="fa fa-th-list fa-fw mr-1"></i> Videos</a>
+                </li>
+                <li class="nav-item pl-1">
+                  <a class="nav-link" href="#PHOTOS"><i class="fa fa-image fa-fw mr-1"></i> Photos</a>
+                </li>
+                <li class="nav-item pl-1">
+                  <a class="nav-link" href="#STATS"><i class="fa fa-trophy fa-fw mr-1  "></i> Stats</a>
+                </li>
+                <li class="nav-item pl-1">
+                  <a class="nav-link" href="#MORE"><i class="fa fa-info-circle fa-fw mr-1"></i> More</a>
+                </li>
+                <li class="nav-item pl-1">
+                  <a class="nav-link" href="#"><i class="fa fa-user-plus fa-fw mr-1"></i> Sign Up/Login</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <!--# Navbar #-->
+        
 
-    </div>
+    <!-- </div> -->
     <div class="switch-container">
       <div class="box">
         <i class="fas fa-sun " id="sun"></i>
