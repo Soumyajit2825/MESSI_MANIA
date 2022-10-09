@@ -400,14 +400,25 @@ h2 {
   background-size: 36px 36px;
 }
 .info-area h3 {
-  font-family: "Brush Script MT", cursive;
+  font-family: cursive;
+  color: black;
 }
 .info-area h5 {
-  color: #b31c1c;
+  color:#a50044;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  font-size: 20px;
+  font-weight: bold;
+}
+.info-area h4{
+  color:#db0030;
   font-family: "Comic Sans MS", "Comic Sans", cursive;
 }
+.info-area p{
+  color:#edbb00;
+  font-weight: bold;
+}
 .info-area ul li {
-  list-style: none;
+  list-style:square;
 }
 
 .achivements {
