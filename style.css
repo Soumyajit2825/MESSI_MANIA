@@ -57,8 +57,20 @@ nav {
   margin-top: 7px;
 }
 
+.nav-link{
+  color: #fff;
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 0 10px;
+  transition: all 0.3s ease-in-out;
+}
 
-
+.navbar-nav{
+  display: flex;
+  align-items: center;
+}
 
 
 .main-nav {
@@ -75,12 +87,13 @@ nav a {
   padding: 30px;
   text-align: center;
   color: white;
+  border-radius: 10px;
 }
 
 nav a:hover {
   text-decoration: none;
   color: black;
-  background-color: white;
+  background-color: rgb(174, 169, 169);
 }
 
 .switch-container {
