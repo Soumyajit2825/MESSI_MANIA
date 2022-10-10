@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Alkalami&family=Mukta&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200&display=swap');
 
 .light {
   --bodyBg: #fff;
@@ -27,8 +28,9 @@
 
 body {
   /* margin: 15px; */
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, */
+    /* Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif, "Monserra",'Montserrat', sans-serif; */
+    font-family: 'Montserrat', sans-serif;
 }
 
 nav {
@@ -66,7 +68,7 @@ nav {
 
 nav a {
   font-size: large;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: bolder;
   font-style: italic;
   text-decoration: none;
@@ -122,6 +124,7 @@ nav a:hover {
 
 main {
   /* background-color:darkorchid; */
+  font-family: 'Montserrat', sans-serif;
   text-align: center;
   background-color: var(--bodyBg);
   color: var(--mainText);
@@ -485,20 +488,20 @@ h2 {
 }
 
 .info-area h3 {
-  font-family: cursive;
+  font-family: 'Montserrat', sans-serif;
   color: black;
 }
 
 .info-area h5 {
   color: #a50044;
-  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  font-family: 'Montserrat', sans-serif;
   font-size: 20px;
   font-weight: bold;
 }
 
 .info-area h4 {
   color: #db0030;
-  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .info-area p {
