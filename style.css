@@ -328,7 +328,7 @@ h2 {
   background: url("Image/stats-background.jpg") no-repeat center center/cover rgba(0, 0, 0, 0.518);
   background-blend-mode: darken;
   opacity: initial;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -337,14 +337,16 @@ h2 {
 .stats-main-content {
   margin: 0 auto;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  width: 80%;
+  gap: 5rem;
+  width: 100%;
 }
 
 .extra-info {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
@@ -641,8 +643,4 @@ h2 {
 
 /* =============== MEDIA QUERIES (MEDIUM DEVICES) =============== */
 @media screen and (max-width: 1220px) {
-  .stats-main-content {
-    flex-direction: column;
-    gap: 5rem;
-  }
 }
