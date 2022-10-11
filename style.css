@@ -50,27 +50,26 @@ nav {
 }
 
 .navbar .navbar-nav .nav-link:hover {
-  color: #fbc531;
+  /* color: #fbc531; */
+  background-color:maroon;
+  color: whitesmoke;
+  text-decoration: none;
 }
 
 .naav {
-  margin-top: 7px;
+  margin-top: 3px;
+  margin-bottom: 0px;
 }
-
-
-
-
-
 .main-nav {
   width: 100%;
-  padding: 20px 0;
+  padding: 25px 0;
 }
 
 nav a {
   font-size: large;
-  font-family: 'Montserrat', sans-serif;
+  font-family:serif;
   font-weight: bolder;
-  font-style: italic;
+  font-style: normal;
   text-decoration: none;
   padding: 30px;
   text-align: center;
@@ -78,9 +77,8 @@ nav a {
 }
 
 nav a:hover {
-  text-decoration: none;
-  color: black;
-  background-color: white;
+  background-color:maroon;
+  color: whitesmoke;
 }
 
 .switch-container {
