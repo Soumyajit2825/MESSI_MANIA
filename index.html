@@ -108,27 +108,27 @@
       <!-- Flickity HTML init -->
       <div class="carousel" data-flickity='{ "wrapAround": true }'>
         <div class="carousel-cell"><video src="Video/videoplayback.mp4"
-            poster="Image/0_GettyImages-1313922671jpgong.jpg" controls></video></div>
+            poster="Image/0_GettyImages-1313922671jpgong.jpg" class="clip" type="video/mp4" loop controls></video></div>
         <div class="carousel-cell"><video
             src="Video/Lionel-Messi-Best-Skill-Whatsapp-Video-Status-Song-Download-Online-2022-1.mp4"
-            poster="Image/220807075403-messi-bicycle-kick-0807-restricted-large-169.jpg" controls></video></div>
+            poster="Image/220807075403-messi-bicycle-kick-0807-restricted-large-169.jpg" class="clip" type="video/mp4" loop controls></video></div>
         <div class="carousel-cell"> <video
-            src="Video/Lionel-Messi-Cristiano-Ronaldo-Best-Whatsapp-Video-Status-2022-1.mp4" poster="Image/4000.jpg"
+            src="Video/Lionel-Messi-Cristiano-Ronaldo-Best-Whatsapp-Video-Status-2022-1.mp4" poster="Image/4000.jpg" class="clip" type="video/mp4" loop
             controls></video></div>
         <div class="carousel-cell"><video src="Video/Lionel-Messi-Love-Whatsapp-Status-Video-Song-Download-2022.mp4"
-            poster="Image/6WHENYGXDJIB7KC72MMN3ZIQWU.jpg" controls></video></div>
+            poster="Image/6WHENYGXDJIB7KC72MMN3ZIQWU.jpg" class="clip" type="video/mp4" loop controls></video></div>
         <div class="carousel-cell"><video
             src="Video/Lionel-Messi-New-4K-Whatsapp-Status-Video-Online-Download-2022-1.mp4"
-            poster="Image/TELEMMGLPICT000267249163_1_trans_NvBQzQNjv4BqqVzuuqpFlyLIwiB6NTmJwauLYewjGO21NF-o1gxbkUI.jpg"
+            poster="Image/TELEMMGLPICT000267249163_1_trans_NvBQzQNjv4BqqVzuuqpFlyLIwiB6NTmJwauLYewjGO21NF-o1gxbkUI.jpg" class="clip" type="video/mp4" loop
             controls></video></div>
         <div class="carousel-cell"> <video src="Video/Messi-🔥❤-4k-HD-Fullscreen-WhatsApp-status.mp4"
-            poster="Image/messi-une.jpg" controls></video></div>
-        <div class="carousel-cell"> <video src="Video/Lionel Messi GOAT.mp4" poster="Image/goat-messi.jpg"
+            poster="Image/messi-une.jpg" class="clip" type="video/mp4" loop controls></video></div>
+        <div class="carousel-cell"> <video src="Video/Lionel Messi GOAT.mp4" poster="Image/goat-messi.jpg" class="clip" type="video/mp4" loop
             controls></video></div>
-        <div class="carousel-cell"> <video src="Video/Messi•G.O.A.T•Skills.mp4" poster="Image/messi-goat.jpg"
+        <div class="carousel-cell"> <video src="Video/Messi•G.O.A.T•Skills.mp4" poster="Image/messi-goat.jpg" class="clip" type="video/mp4" loop
             controls></video></div>
         <div class="carousel-cell"> <video src="Video/talking-to-the-moon-x-playdate-lionel-messi.mp4"
-            poster="Image/messi-goat.jpg" controls></video></div>
+            poster="Image/messi-goat.jpg" class="clip" type="video/mp4" loop controls></video></div>
 
       </div>
     </section>
@@ -339,6 +339,18 @@
       document.body.scrollTop = 0;
       document.documentElement.scrollTop = 0;
     }
+  </script>
+  <script>
+    const clip = document.querySelectorAll('.clip');
+    for (let i =0;i<clip.length;i++){
+      clip[i].addEventListener('mouseover',function(e){
+        clip[i].play()
+      })
+      clip[i].addEventListener('mouseout',function(e){
+        clip[i].pause()
+      })
+    }
+
   </script>
 
 </body>
