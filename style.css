@@ -178,25 +178,6 @@ footer a {
   color: white;
 }
 
-table,
-tr,
-th,
-td {
-  border: 2px solid black;
-  border-collapse: collapse;
-  padding: 10px;
-  border-spacing: 10px;
-  color: white;
-}
-
-th {
-  background-color: skyblue;
-}
-
-td {
-  background-color: coral;
-}
-
 .banner {
   background-image: url(./Video/DkUQ.gif);
   height: 20vw;
@@ -350,15 +331,33 @@ h2 {
   justify-content: center;
 }
 
-.stats-table th {
-  font-size: 25px;
+.stats-table {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.stats-table .card {
+  border-radius: 0.2rem;
+  overflow: hidden;
+  transition: 0.2s ease;
+}
+
+.stats-table .card:hover {
+  transform: translateY(-0.5rem);
+}
+
+.stats-table .card-heading {
+  font-size: 2rem;
   font-weight: bolder;
   color: white;
   background-color: tomato;
   padding: 0px 15px;
 }
 
-.stats-table td {
+.stats-table .card-text {
   font-size: 20px;
   color: #FFD700;
   font-family: Arial, Helvetica, sans-serif;
@@ -638,6 +637,10 @@ h2 {
 
   .switch-container {
     top: 30px;
+  }
+
+  .stats-table {
+    margin-top: 1rem;
   }
 }
 
