@@ -209,6 +209,21 @@ h2 {
   margin-bottom: 20px;
 }
 
+.factsHead{
+  color:rgb(255, 46, 46) !important;
+  background-color: purple;
+  font-size: 40px;
+  font-family: "Oswald", serif !important;
+  margin: auto;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  width: 100px;
+  padding: 22px 100px;
+  margin-top: 30px;
+  border-radius: 6px; 
+}
+
 /* external css: flickity.css */
 
 * {
