@@ -204,6 +204,11 @@ h2 {
   margin-left: auto;
 }
 
+.facts > li{
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
 /* external css: flickity.css */
 
 * {
