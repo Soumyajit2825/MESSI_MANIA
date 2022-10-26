@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Alkalami&family=Mukta&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ultra&display=swap'); /* Name */
+@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@700&display=swap');/*a tags*/
 
 .light {
   --bodyBg: #fff;
@@ -32,59 +34,57 @@ body {
     /* Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif, "Monserra",'Montserrat', sans-serif; */
     font-family: 'Montserrat', sans-serif;
 }
-
-nav {
-  overflow: hidden;
-  transition: height ease-in-out 3s;
-  background-color: #b31c1c;
-  overflow: hidden;
-  position: relative;
+.navbar{
+  height:120px ;
 }
-
-.navbar {
-  background-color: #484848;
+.nav-2{
+  height:100% ;
 }
-
-.navbar .navbar-nav {
-  color: rgb(76, 76, 76);
+.div-bg{
+  background-image: url("Image/backgroundNav.jpg");
+  height:100%;
+  width:100%;
 }
-
-.navbar .navbar-nav .nav-link:hover {
-  /* color: #fbc531; */
-  background-color:maroon;
-  color: whitesmoke;
+.div-navbar{
+  padding:15px;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top:-85px;
+  background-color: rgba(233, 228, 234, 0.3);
+  width:98%;
+  border-radius: 10px;
+}
+.div-navbar a:not(.a-name){
+  margin-left:4%;
   text-decoration: none;
+  color:white;
+  font-family: 'Fuzzy Bubbles', cursive;
+  font-size:21px;
+  text-shadow: 10px -8px 7px rgb(120, 5, 76);
 }
-
-.naav {
-  margin-top: 3px;
-  margin-bottom: 0px;
-}
-.main-nav {
-  width: 100%;
-  padding: 25px 0;
-}
-
-nav a {
-  font-size: large;
-  font-family:serif;
-  font-weight: bolder;
-  font-style: normal;
+.a-name{
+  padding: 10px;
   text-decoration: none;
-  padding: 30px;
-  text-align: center;
+  font-family: 'Ultra', serif;
+  font-size:30px;
+  color: white;
+  text-shadow: 0px 8px 10px rgb(8, 3, 97), 0px -8px 7px rgb(120, 5, 76);
+}
+.a-name:hover{
+  text-decoration: none;
+  background-color: rgba(4, 9, 101, 0.2);
+  border-radius: 30px;
   color: white;
 }
 
-nav a:hover {
-  background-color:maroon;
-  color: whitesmoke;
+.div-navbar a:not(.a-name):hover{
+  color:rgb(174, 170, 170);
 }
 
 .switch-container {
   position: absolute;
-  top: 15px;
-  right: 10px;
+  top: 55px;
+  right: 25px;
 }
 
 .switch-container div {
@@ -221,7 +221,7 @@ h2 {
   width: 100px;
   padding: 22px 100px;
   margin-top: 30px;
-  border-radius: 6px; 
+  border-radius: 6px;
 }
 
 /* external css: flickity.css */
