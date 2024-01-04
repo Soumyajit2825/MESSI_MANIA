@@ -221,7 +221,12 @@ h2 {
   width: 100px;
   padding: 22px 100px;
   margin-top: 30px;
-  border-radius: 6px;
+  border-radius: 15px; /*changed the border radius */
+}
+/*adding hover effect on the factsHead */
+.factsHead:hover{
+  border-radius: 15px;
+  background-color: rgba(128, 0, 128, 0.500);
 }
 
 /* external css: flickity.css */
@@ -318,6 +323,11 @@ h2 {
 .secondary_heading {
   font-family: "Oswald", serif;
   color: #ffd700;
+  border-radius: 15px; /* added border radius */
+}
+/*adding the hover effect on heading */
+.secondary_heading:hover{
+   background-color: rgba(0, 0, 0, 0.500); 
 }
 
 .stats-area {
