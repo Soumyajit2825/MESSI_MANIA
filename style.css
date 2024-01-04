@@ -414,6 +414,11 @@ h2 {
 .extra-info img:hover {
   transform: scale(1.1);
   filter: brightness(110%);
+  
+}
+/* added this hover effect on the CSS of the links , such that the underlined is also in the same color with the text*/
+.extra-info a:hover{
+  color:white;
 }
 
 .stats-area .info-label {
@@ -506,7 +511,15 @@ h2 {
   width: 80%;
   margin: 0 auto;
 }
-
+/*added CSS to the image , filter effect */
+.main-info img{
+   border-radius: 20px;
+   filter: brightness(130%);
+}
+/*added hover CSS effect , filter(grayscale) effect */
+.main-info img:hover{
+   filter: grayscale(50%);
+}
 .info-area h2 {
   width: 400px;
   /* background-color: rgba(9, 26, 86, 0.797); */
@@ -553,16 +566,23 @@ h2 {
 .achivements img {
   width: 400px;
   height: 300px;
+  border-radius: 15px; /*added border -radius to the images */
 }
-
+/* added hover effect to the images */
+.achivements img:hover{
+  transform: scale(1.1);
+  filter: brightness(120%);
+  border-radius: 20px;
+}
 .achivements-div {
   display: flex;
   flex-direction: column;
 }
 
-.achivements-div h5 {
+.achivements-div h3 {
   font-family: "Alkalami", serif;
-  font-size: 15px;
+  font-size: 2rem;
+  color: #E1306C;
 }
 
 .main-footer {
