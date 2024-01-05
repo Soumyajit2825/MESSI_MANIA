@@ -1,7 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Alkalami&family=Mukta&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Ultra&display=swap'); /* Name */
-@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@700&display=swap');/*a tags*/
+@import url('https://fonts.googleapis.com/css2?family=Ultra&display=swap');
+/* Name */
+@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@700&display=swap');
+/*a tags*/
 
 .light {
   --bodyBg: #fff;
@@ -31,60 +33,173 @@
 body {
   /* margin: 15px; */
   /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, */
-    /* Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif, "Monserra",'Montserrat', sans-serif; */
-    font-family: 'Montserrat', sans-serif;
+  /* Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif, "Monserra",'Montserrat', sans-serif; */
+  font-family: 'Montserrat', sans-serif;
 }
-.navbar{
-  height:120px ;
+
+.navbar {
+  height: 120px;
 }
-.nav-2{
-  height:100% ;
+
+.nav-2 {
+  height: 100%;
 }
-.div-bg{
+
+.div-bg {
   background-image: url("Image/backgroundNav.jpg");
-  height:100%;
-  width:100%;
+  height: 100%;
+  width: 100%;
 }
-.div-navbar{
-  padding:15px;
-  margin-left:auto;
-  margin-right:auto;
-  margin-top:-85px;
+
+.div-navbar {
+  padding: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -85px;
   background-color: rgba(233, 228, 234, 0.3);
-  width:98%;
   border-radius: 10px;
+  display: flex;
+  align-items: center;
+  position: relative;
 }
-.div-navbar a:not(.a-name){
-  margin-left:4%;
+
+/* My code */
+.navbar {
+  position: sticky;
+}
+
+.div-navbar ul {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.div-navbar ul li {
+  list-style-type: none;
+}
+
+.sidebar_possition {
+  margin-top: 0;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 300px;
+  z-index: 999;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: black;
+  backdrop-filter: blur(10px);
+  box-shadow: -10px 0 10ox rgba(0, 0, 0, 0, 1);
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.sidebar li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  width: 100%;
+  height: 65px;
+  font-weight: bolder;
+  font-size: 2.5rem;
+  position: relative;
+  cursor: pointer;
+  color: black;
+
+}
+
+.close-menu {
+  justify-content: center !important;
+  align-items: flex-end !important;
+  position: absolute !important;
+  left: 0 !important;
+  top: 0 !important;
+
+}
+
+
+.menu {
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  margin-right: 5px;
+  display: none;
+}
+
+#menu-icon {
+  color: black;
+  font-size: 48px;
+}
+
+#menu-icon-close {
+  color: white;
+  font-size: 48px;
+  ;
+}
+
+.a-color {
+  color: black;
+}
+
+.hide {
+  display: none;
+}
+
+@media(max-width:1136px) {
+  .hidenavele {
+    display: none;
+  }
+
+  .menu {
+    margin-top: 5px;
+    display: block;
+  }
+}
+
+/* end*/
+.div-navbar a:not(.a-name) {
+  margin-left: 4%;
   text-decoration: none;
-  color:white;
+  color: black;
   font-family: 'Fuzzy Bubbles', cursive;
-  font-size:21px;
+  font-size: 21px;
   text-shadow: 10px -8px 7px rgb(120, 5, 76);
 }
-.a-name{
+
+.a-name {
   padding: 10px;
   text-decoration: none;
   font-family: 'Ultra', serif;
-  font-size:30px;
+  font-size: 2.5rem;
   color: white;
   text-shadow: 0px 8px 10px rgb(8, 3, 97), 0px -8px 7px rgb(120, 5, 76);
 }
-.a-name:hover{
+
+.a-name:hover {
   text-decoration: none;
   background-color: rgba(4, 9, 101, 0.2);
   border-radius: 30px;
   color: white;
 }
 
-.div-navbar a:not(.a-name):hover{
-  color:rgb(174, 170, 170);
+.div-navbar a:not(.a-name):hover {
+  color: rgb(174, 170, 170);
 }
 
 .switch-container {
-  position: absolute;
-  top: 55px;
-  right: 25px;
+
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .switch-container div {
@@ -170,12 +285,30 @@ footer {
   background-color: #333;
 }
 
+.main-footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.main-footer li {
+  list-style: none;
+}
+
 footer a {
   text-decoration: none;
   padding: 20px;
   text-align: center;
   float: left;
   color: white;
+}
+
+@media(max-width:712px) {
+  .main-footer {
+    flex-direction: column;
+
+  }
 }
 
 .banner {
@@ -185,7 +318,7 @@ footer a {
   background-repeat: no-repeat;
   background-position: top center;
   background-size: 35%;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
 }
 
 header {
@@ -204,13 +337,13 @@ h2 {
   margin-left: auto;
 }
 
-.facts > li{
-  text-align: justify;
+.facts>li {
+  /* text-align: justify; */
   margin-bottom: 20px;
 }
 
-.factsHead{
-  color:rgb(255, 46, 46) !important;
+.factsHead {
+  color: rgb(255, 46, 46) !important;
   background-color: purple;
   font-size: 40px;
   font-family: "Oswald", serif !important;
@@ -221,10 +354,12 @@ h2 {
   width: 100px;
   padding: 22px 100px;
   margin-top: 30px;
-  border-radius: 15px; /*changed the border radius */
+  border-radius: 15px;
+  /*changed the border radius */
 }
+
 /*adding hover effect on the factsHead */
-.factsHead:hover{
+.factsHead:hover {
   border-radius: 15px;
   background-color: rgba(128, 0, 128, 0.500);
 }
@@ -323,11 +458,13 @@ h2 {
 .secondary_heading {
   font-family: "Oswald", serif;
   color: #ffd700;
-  border-radius: 15px; /* added border radius */
+  border-radius: 15px;
+  /* added border radius */
 }
+
 /*adding the hover effect on heading */
-.secondary_heading:hover{
-   background-color: rgba(0, 0, 0, 0.500); 
+.secondary_heading:hover {
+  background-color: rgba(0, 0, 0, 0.500);
 }
 
 .stats-area {
@@ -414,11 +551,12 @@ h2 {
 .extra-info img:hover {
   transform: scale(1.1);
   filter: brightness(110%);
-  
+
 }
+
 /* added this hover effect on the CSS of the links , such that the underlined is also in the same color with the text*/
-.extra-info a:hover{
-  color:white;
+.extra-info a:hover {
+  color: white;
 }
 
 .stats-area .info-label {
@@ -511,15 +649,18 @@ h2 {
   width: 80%;
   margin: 0 auto;
 }
+
 /*added CSS to the image , filter effect */
-.main-info img{
-   border-radius: 20px;
-   filter: brightness(130%);
+.main-info img {
+  border-radius: 20px;
+  filter: brightness(130%);
 }
+
 /*added hover CSS effect , filter(grayscale) effect */
-.main-info img:hover{
-   filter: grayscale(50%);
+.main-info img:hover {
+  filter: grayscale(50%);
 }
+
 .info-area h2 {
   width: 400px;
   /* background-color: rgba(9, 26, 86, 0.797); */
@@ -566,14 +707,17 @@ h2 {
 .achivements img {
   width: 400px;
   height: 300px;
-  border-radius: 15px; /*added border -radius to the images */
+  border-radius: 15px;
+  /*added border -radius to the images */
 }
+
 /* added hover effect to the images */
-.achivements img:hover{
+.achivements img:hover {
   transform: scale(1.1);
   filter: brightness(120%);
   border-radius: 20px;
 }
+
 .achivements-div {
   display: flex;
   flex-direction: column;
@@ -694,6 +838,33 @@ h2 {
   }
 }
 
-/* =============== MEDIA QUERIES (MEDIUM DEVICES) =============== */
-@media screen and (max-width: 1220px) {
+/* My Code */
+@media (max-width:548px) {
+  .main-info {
+    width: 100%;
+  }
+
+  .achivements img {
+    width: 100%;
+  }
+
+  .sidebar {
+    width: 100%;
+  }
 }
+
+@media(max-width:431px) {
+  .info-area h2 {
+    width: 100%;
+  }
+}
+
+@media(max-width:335px) {
+  .extra-info img {
+    width: 100%;
+  }
+}
+
+/* =============== MEDIA QUERIES (MEDIUM DEVICES) =============== */
+/* @media screen and (max-width: 1220px) {
+} */
