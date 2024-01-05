@@ -5,6 +5,8 @@ const moon = document.querySelector(".fa-moon");
 const sun = document.querySelector(".fa-sun");
 const _switch = document.querySelector(".switch-container");
 const box = document.querySelector(".box");
+let main = document.getElementsByTagName('main')[0]
+let secondary_heading = document.querySelectorAll(".secondary_heading")
 
 navIcon?.addEventListener("click", () => {
   navBar.classList.toggle("navBarMobile");
@@ -22,12 +24,18 @@ _switch?.addEventListener("click", () => {
     sun.style.opacity = "0";
     moon.style.transform = "translateX(-45px) rotate(350deg)";
     moon.style.opacity = "1";
+
+    applyDarkTheme()
+
     theme = "dark";
   } else {
     sun.style.transform = "translateX(0)";
     sun.style.opacity = "1";
     moon.style.transform = "translateX(0)";
     moon.style.opacity = "0";
+
+   removeDarkTheme()
+
     theme = "light";
   }
 });
@@ -42,11 +50,44 @@ window.onload = () => {
     sun.style.opacity = "1";
     moon.style.transform = "translateX(0)";
     moon.style.opacity = "0";
+    removeDarkTheme()
   }
   if (ltheme === "dark") {
     sun.style.transform = "translateX(45px) ";
     sun.style.opacity = "0";
     moon.style.transform = "translateX(-45px)";
     moon.style.opacity = "1";
+    applyDarkTheme()
   }
 };
+
+
+function applyDarkTheme(){
+  main.classList.add("darkTheme");
+  document.getElementById("STATS").classList.add("darkTheme")
+
+  document.getElementsByClassName("main-info")[0].classList.add("darkTheme")
+  secondary_heading.forEach((heading) => {
+    heading.classList.add("darkTheme")
+  })
+  document.querySelectorAll(".blackText").forEach((Txt)=>
+  Txt.style.color = "white"
+  )
+  
+}
+function removeDarkTheme(){
+
+  main.classList.remove("darkTheme");
+  document.getElementById("STATS").classList.remove("darkTheme")
+  document.getElementsByClassName("main-info")[0].classList.remove("darkTheme")
+  secondary_heading.forEach((heading) => {
+    heading.classList.remove("darkTheme")
+  })
+
+  document.querySelectorAll(".blackText").forEach((Txt)=>
+  Txt.style.color = "white"
+  )
+
+
+
+}
