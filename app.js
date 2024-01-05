@@ -85,7 +85,7 @@ function removeDarkTheme(){
   })
 
   document.querySelectorAll(".blackText").forEach((Txt)=>
-  Txt.style.color = "white"
+  Txt.style.color = "black"
   )
 
 
