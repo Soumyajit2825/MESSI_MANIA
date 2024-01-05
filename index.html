@@ -11,6 +11,7 @@
   <link rel="icon" type="image/png" sizes="16x16" href="Image/favicon/favicon-16x16.png">
   <link rel="manifest" href="Image/favicon/site.webmanifest">
   <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
@@ -33,51 +34,68 @@
     h3 {
       color: blueviolet;
     }
-    .facts{
+
+    .facts {
       color: blueviolet;
     }
-    
   </style>
 </head>
 
 
 <body>
-  <header>
-    <div class="banner"></div>
-  </header>
+
   <nav class="navbar">
-  <nav class="nav-2">
-    <div class="div-bg"></div> 
-    <div class="div-navbar">
+    <nav class="nav-2">
+      <div class="div-bg"></div>
+      <div class="div-navbar">
         <a href="#" class="a-name">Messi Mania</a>
 
-        <a href="#HOME" class="a-home" style="margin-left:12%"><i class="fa fa-home"></i>&nbsp; Home</a>
+        <a href="#HOME" class="a-home hidenavele" style="margin-left:12%"><i class="fa fa-home"></i>&nbsp; Home</a>
 
-        <a href="#VIDEOS" class="a-photos" style="text-shadow: 10px -8px 10px rgb(8, 4, 99);"><i class="fa fa-photo"></i>&nbsp;Videos</a>
+        <a href="#VIDEOS" class="a-photos hidenavele" style="text-shadow: 10px -8px 10px rgb(8, 4, 99);"><i
+            class="fa fa-photo"></i>&nbsp;Videos</a>
 
-        <a href="#PHOTOS" class="a-photos" style="text-shadow: 10px -8px 10px rgb(8, 4, 99);"><i class="fa fa-photo"></i>&nbsp;Photos</a>
+        <a href="#PHOTOS" class="a-photos hidenavele" style="text-shadow: 10px -8px 10px rgb(8, 4, 99);"><i
+            class="fa fa-photo"></i>&nbsp;Photos</a>
 
-        <a href="#STATS" class="a-stats"><i class="fa fa-trophy" aria-hidden="true"></i>&nbsp;Stats</a>
+        <a href="#STATS" class="a-stats hidenavele"><i class="fa fa-trophy" aria-hidden="true"></i>&nbsp;Stats</a>
 
-        <a href="#MORE" class="a-more"><i class="fa fa-info-circle"></i>&nbsp;More</a>
+        <a href="#MORE" class="a-more hidenavele"><i class="fa fa-info-circle"></i>&nbsp;More</a>
         <!-- <a href="#" class="a-login" style="text-shadow: 10px -8px 10px rgb(8, 4, 99);"><i class="fa fa-user-plus"></i>&nbsp;Sign Up/Login</a> -->
-    </div>
-  </nav>
-    <!--# Navbar #-->
+        <a class="menu" onclick="menuOn()"><i class="material-icons" id="menu-icon">menu</i></a>
 
-
-    <!-- </div> -->
-    <div class="switch-container">
-      <div class="box">
-        <i class="fas fa-sun " id="sun"></i>
-        <i class="fas fa-moon" id="moon"></i>
-        <span class="ball"></span>
       </div>
-    </div>
+      <ul class="sidebar">
+        <li class="menu close-menu" onclick="hideSidebar()"><i class="material-icons" id="menu-icon-close">close</i>
+        </li>
+        <li><a href="#HOME" class="a-home a-color"><i class="fa fa-home"></i>&nbsp; Home</a></li>
+        <li><a href="#VIDEOS" class="a-photos a-color" style="text-shadow: 10px -8px 10px rgb(8, 4, 99);"><i
+              class="fa fa-photo"></i>&nbsp;Videos</a></li>
+        <li><a href="#PHOTOS" class="a-photos a-color" style="text-shadow: 10px -8px 10px rgb(8, 4, 99);"><i
+              class="fa fa-photo"></i>&nbsp;Photos</a></li>
+        <li> <a href="#STATS" class="a-stats a-color"><i class="fa fa-trophy" aria-hidden="true"></i>&nbsp;Stats</a>
+        </li>
+        <li><a href="#MORE" class="a-more a-color"><i class="fa fa-info-circle"></i>&nbsp;More</a></li>
+      </ul>
+    </nav>
+    <!--# Navbar #-->
   </nav>
+
+  <div class="switch-container">
+    <div class="box">
+      <i class="fas fa-sun " id="sun"></i>
+      <i class="fas fa-moon" id="moon"></i>
+      <span class="ball"></span>
+    </div>
+  </div>
+  <header class="content1">
+    <div class="banner"></div>
+  </header>
+
   <button class='top-scroll' onclick="topFunction()" id="Top-scroll-Btn"><img
       src="Image/favicon/top-scroll-icon.png"></img></button>
   <main>
+
     <section class="video-area">
       <h2 class="secondary_heading" id="VIDEOS">VIDEOS</h2>
       <!-- Flickity HTML init -->
@@ -86,22 +104,23 @@
             poster="Image/0_GettyImages-1313922671jpgong.jpg" class="clip" type="video/mp4" loop controls></video></div>
         <div class="carousel-cell"><video
             src="Video/Lionel-Messi-Best-Skill-Whatsapp-Video-Status-Song-Download-Online-2022-1.mp4"
-            poster="Image/220807075403-messi-bicycle-kick-0807-restricted-large-169.jpg" class="clip" type="video/mp4" loop controls></video></div>
+            poster="Image/220807075403-messi-bicycle-kick-0807-restricted-large-169.jpg" class="clip" type="video/mp4"
+            loop controls></video></div>
         <div class="carousel-cell"> <video
-            src="Video/Lionel-Messi-Cristiano-Ronaldo-Best-Whatsapp-Video-Status-2022-1.mp4" poster="Image/4000.jpg" class="clip" type="video/mp4" loop
-            controls></video></div>
+            src="Video/Lionel-Messi-Cristiano-Ronaldo-Best-Whatsapp-Video-Status-2022-1.mp4" poster="Image/4000.jpg"
+            class="clip" type="video/mp4" loop controls></video></div>
         <div class="carousel-cell"><video src="Video/Lionel-Messi-Love-Whatsapp-Status-Video-Song-Download-2022.mp4"
             poster="Image/6WHENYGXDJIB7KC72MMN3ZIQWU.jpg" class="clip" type="video/mp4" loop controls></video></div>
         <div class="carousel-cell"><video
             src="Video/Lionel-Messi-New-4K-Whatsapp-Status-Video-Online-Download-2022-1.mp4"
-            poster="Image/TELEMMGLPICT000267249163_1_trans_NvBQzQNjv4BqqVzuuqpFlyLIwiB6NTmJwauLYewjGO21NF-o1gxbkUI.jpg" class="clip" type="video/mp4" loop
-            controls></video></div>
+            poster="Image/TELEMMGLPICT000267249163_1_trans_NvBQzQNjv4BqqVzuuqpFlyLIwiB6NTmJwauLYewjGO21NF-o1gxbkUI.jpg"
+            class="clip" type="video/mp4" loop controls></video></div>
         <div class="carousel-cell"> <video src="Video/Messi-🔥❤-4k-HD-Fullscreen-WhatsApp-status.mp4"
             poster="Image/messi-une.jpg" class="clip" type="video/mp4" loop controls></video></div>
-        <div class="carousel-cell"> <video src="Video/Lionel Messi GOAT.mp4" poster="Image/goat-messi.jpg" class="clip" type="video/mp4" loop
-            controls></video></div>
-        <div class="carousel-cell"> <video src="Video/Messi•G.O.A.T•Skills.mp4" poster="Image/messi-goat.jpg" class="clip" type="video/mp4" loop
-            controls></video></div>
+        <div class="carousel-cell"> <video src="Video/Lionel Messi GOAT.mp4" poster="Image/goat-messi.jpg" class="clip"
+            type="video/mp4" loop controls></video></div>
+        <div class="carousel-cell"> <video src="Video/Messi•G.O.A.T•Skills.mp4" poster="Image/messi-goat.jpg"
+            class="clip" type="video/mp4" loop controls></video></div>
         <div class="carousel-cell"> <video src="Video/talking-to-the-moon-x-playdate-lionel-messi.mp4"
             poster="Image/messi-goat.jpg" class="clip" type="video/mp4" loop controls></video></div>
 
@@ -164,7 +183,7 @@
               <div class="card-text">8x</div>
             </div>
           </div>
-          
+
           <div class="extra-info">
             <a target="_blank" href="https://www.messivsronaldo.app/">
               <img src="Image/messi_v_cr7.jpg" alt="" width="25%">
@@ -194,17 +213,22 @@
         <h3>LIONEL MESSI</h3>
         <p><b>Age as
             on 2023 (36 Years)</b></p>
-            <div class="social_links">
-            <a class="social_link social_link_wikipedia" href="https://en.wikipedia.org/wiki/Lionel_Messi" target="_blank"
-          rel="noopener noreferrer"><span class="social_icon_wikipedia"><i class="fa-brands fa-wikipedia-w"></i></span><span>Wikipedia</span></a>&nbsp;
-        &nbsp;
-        |&nbsp;
-        &nbsp;
-        <a class="social_link social_link_instagram" href="https://www.instagram.com/leomessi/" target="_blank" rel="noopener noreferrer"><span class="social_icon_instagram"><i class="fa-brands fa-instagram"></i></span><span>Instagram</span></a>&nbsp;
-        &nbsp;
-        |&nbsp;
-        &nbsp;
-        <a class="social_link social_link_facebook" href="https://www.facebook.com/leomessi" target="_blank" rel="noopener noreferrer"><span class="social_icon_facebook"><i class="fa-brands fa-facebook"></i></span><span>Facebook</span></a>
+        <div class="social_links">
+          <a class="social_link social_link_wikipedia" href="https://en.wikipedia.org/wiki/Lionel_Messi" target="_blank"
+            rel="noopener noreferrer"><span class="social_icon_wikipedia"><i
+                class="fa-brands fa-wikipedia-w"></i></span><span>Wikipedia</span></a>&nbsp;
+          &nbsp;
+          |&nbsp;
+          &nbsp;
+          <a class="social_link social_link_instagram" href="https://www.instagram.com/leomessi/" target="_blank"
+            rel="noopener noreferrer"><span class="social_icon_instagram"><i
+                class="fa-brands fa-instagram"></i></span><span>Instagram</span></a>&nbsp;
+          &nbsp;
+          |&nbsp;
+          &nbsp;
+          <a class="social_link social_link_facebook" href="https://www.facebook.com/leomessi" target="_blank"
+            rel="noopener noreferrer"><span class="social_icon_facebook"><i
+                class="fa-brands fa-facebook"></i></span><span>Facebook</span></a>
         </div>
         <h4><b>Lionel Messi,
             in full <i>Lionel Andrés Messi</i>,
@@ -275,15 +299,23 @@
             <h3>Messi has scored most goals in a calender
               year</h3>
           </div>
-          <div class="facts"><img src="https://d107a8nc3g2c4h.cloudfront.net/images/blog/wp-content/uploads/Lionel-Messi-facts.jpg" alt="MESSI" width="300px" height="300px">
-           <h4 class="factsHead">FACTS</h4>
-            <h5><ol class="facts">
-              <li> Messi had growth hormone deficiency, which was stopping his normal growth rate at a tender age of 11. Most importantly, his parents couldn’t afford his treatment of $900 per month.</li>
-              <li>Through their relatives in Catalonia, Messi’s family arranged a trial with Barcelona in September 2000. Secondly, he impressed the first team director and he wanted to sign him immediately. Having no paper at hand, he wrote Messi’s first contract on a paper napkin.</li>
-             <li> Messi pursued by the Royal Spanish Football Federation to join the Spanish Football Team. However, Lionel Messi declined the offer.</li>
-            </ol>
-            Here are some: <a href="https://www.purevpn.com/blog/top-facts-about-lionel-messi/">More facts about Messi</a>
-          </h5>
+          <div class="facts1"><img
+              src="https://d107a8nc3g2c4h.cloudfront.net/images/blog/wp-content/uploads/Lionel-Messi-facts.jpg"
+              alt="MESSI" width="300px" height="300px">
+            <h4 class="factsHead">FACTS</h4>
+            <h5>
+              <ol class="facts">
+                <li> Messi had growth hormone deficiency, which was stopping his normal growth rate at a tender age of
+                  11. Most importantly, his parents couldn’t afford his treatment of $900 per month.</li>
+                <li>Through their relatives in Catalonia, Messi’s family arranged a trial with Barcelona in September
+                  2000. Secondly, he impressed the first team director and he wanted to sign him immediately. Having no
+                  paper at hand, he wrote Messi’s first contract on a paper napkin.</li>
+                <li> Messi pursued by the Royal Spanish Football Federation to join the Spanish Football Team. However,
+                  Lionel Messi declined the offer.</li>
+              </ol>
+              Here are some: <a href="https://www.purevpn.com/blog/top-facts-about-lionel-messi/">More facts about
+                Messi</a>
+            </h5>
           </div>
         </div>
         <h3>Messi replicated two of Maradona's most
@@ -294,7 +326,7 @@
           similar fashion to Maradona's “Hand of god” goal against Espanyol in
           a league fixture.</h3>
         <div class="carousel">
-          <video style="height: 300px; width:auto" class="carousel-cell" style="height: 200px; width: auto;"
+          <video style="height: 300px;" class="carousel-cell" style="height: 200px;"
             src="Video/Leo Messi Maradona goal vs Getafe, just 19y old.mp4" poster="Image/download.jpg"
             controls></video>
         </div>
@@ -338,11 +370,11 @@
   </script>
   <script>
     const clip = document.querySelectorAll('.clip');
-    for (let i =0;i<clip.length;i++){
-      clip[i].addEventListener('mouseover',function(e){
+    for (let i = 0; i < clip.length; i++) {
+      clip[i].addEventListener('mouseover', function (e) {
         clip[i].play()
       })
-      clip[i].addEventListener('mouseout',function(e){
+      clip[i].addEventListener('mouseout', function (e) {
         clip[i].pause()
       })
     }
@@ -353,6 +385,7 @@
 </footer>
 <!-- JavaScript -->
 <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<script src="navbar.js"></script>
 <script src="./app.js"></script>
 </body>
 
