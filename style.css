@@ -667,7 +667,7 @@ main.darkTheme{
 }
 
 .top-scroll:hover {
-  background-color: rgb(234, 72, 72, 0.2);
+  background-color: rgba(72, 161, 234, 0.361);
 }
 
 /* .image-back-div {
