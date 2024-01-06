@@ -447,22 +447,22 @@
       </div>
     </section>
   </main>
-  <div class="footer">
-    <div class="content">
-        <h4>FAQ</h4>
-        <h4>Terms & Conditions</h4>
-        <h4>Privacy Policy</h4>
-        <h4>Contact Us</h4>
-    </div>
-    <footer>
-      <hr />
-      © 2022 | MESSI MANIA
-    </footer>
-  </div>  
+ <footer>
+    <ul class="main-footer">
+      <li><a href="#">FAQ</a></li>
+      <li><a href="#">Terms & Conditions</a></li>
+      <li><a href="#">Privacy Policy</a></li>
+      <li><a href="#">Contact US</a></li>
+      <li><a href="#">Refund Policy</a></li>
+      <hr style="background-color: white; width: 100%;">
+      <li><a class="copyright">&copy; <span id="year"></span> | MESSI MANIA</a></li>
+    </ul>
+  </footer>
   <!-- JavaScript -->
   <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
   <script src="./app.js"></script>
   <script>
+      document.getElementById("year").innerHTML = new Date().getFullYear();
     // Get the button
     let mybutton = document.getElementById("Top-scroll-Btn");
 
