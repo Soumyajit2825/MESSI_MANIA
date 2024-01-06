@@ -11,6 +11,7 @@
   <link rel="icon" type="image/png" sizes="16x16" href="Image/favicon/favicon-16x16.png">
   <link rel="manifest" href="Image/favicon/site.webmanifest">
   <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
@@ -46,10 +47,58 @@
 
 
 <body>
+
+  <nav class="mainnavbar">
+    <nav class="nav-2">
+      <div class="div-bg"></div>
+      <div class="div-navbar">
+        <!-- <a href="#" class="a-name">Messi Mania</a> -->
+        <div class="logo">
+          <img src="./Image/cropped-messi-logo-01.png" alt="">
+          <a href="#" class="a-name">Messi Mania</a>
+        </div>
+
+        <a href="#HOME" class="a-home hidenavele" style="margin-left:12%"><i class="fa fa-home"></i>&nbsp; Home</a>
+
+        <a href="#VIDEOS" class="a-photos hidenavele" style="text-shadow: 10px -8px 10px rgb(8, 4, 99);"><i
+            class="fa fa-photo"></i>&nbsp;Videos</a>
+
+        <a href="#PHOTOS" class="a-photos hidenavele" style="text-shadow: 10px -8px 10px rgb(8, 4, 99);"><i
+            class="fa fa-photo"></i>&nbsp;Photos</a>
+
+        <a href="#STATS" class="a-stats hidenavele"><i class="fa fa-trophy" aria-hidden="true"></i>&nbsp;Stats</a>
+
+        <a href="#MORE" class="a-more hidenavele"><i class="fa fa-info-circle"></i>&nbsp;More</a>
+        <!-- <a href="#" class="a-login" style="text-shadow: 10px -8px 10px rgb(8, 4, 99);"><i class="fa fa-user-plus"></i>&nbsp;Sign Up/Login</a> -->
+        <a class="menu" onclick="menuOn()"><i class="material-icons" id="menu-icon">menu</i></a>
+
+      </div>
+      <ul class="sidebar">
+        <li class="menu close-menu" onclick="hideSidebar()"><i class="material-icons" id="menu-icon-close">close</i>
+        </li>
+        <li><a href="#HOME" class="a-home a-color"><i class="fa fa-home"></i>&nbsp; Home</a></li>
+        <li><a href="#VIDEOS" class="a-photos a-color" style="text-shadow: 10px -8px 10px rgb(8, 4, 99);"><i
+              class="fa fa-photo"></i>&nbsp;Videos</a></li>
+        <li><a href="#PHOTOS" class="a-photos a-color" style="text-shadow: 10px -8px 10px rgb(8, 4, 99);"><i
+              class="fa fa-photo"></i>&nbsp;Photos</a></li>
+        <li> <a href="#STATS" class="a-stats a-color"><i class="fa fa-trophy" aria-hidden="true"></i>&nbsp;Stats</a>
+        </li>
+        <li><a href="#MORE" class="a-more a-color"><i class="fa fa-info-circle"></i>&nbsp;More</a></li>
+      </ul>
+    </nav>
+    <!--# Navbar #-->
+  </nav>
+
+
+  <!-- ............... -->
+  <div class="switch-container">
+    <div class="box">
+      <i class="fas fa-sun " id="sun"></i>
+      <i class="fas fa-moon" id="moon"></i>
+      <span class="ball"></span>
+    </div>
+  </div>
   <header>
-
-
-
     <figure>
       <div class="carousel dissolve">
         <div class="items">
@@ -75,45 +124,11 @@
 
     </div>
 
-
-
   </header>
-  <nav id="navbar" class="navbar">
-    <nav class="nav-2">
-      <!-- <div class="div-bg"></div> -->
-      <div class="logo">
-        <img src="./Image/cropped-messi-logo-01.png" alt="">
-        <a href="#" class="a-name">Messi Mania</a>
-      </div>
-      <div class="div-navbar">
 
 
-        <a href="#HOME" class="a-home"><i class="fa fa-home"></i>&nbsp; Home</a>
 
-        <a href="#STATS" class="a-stats"><i class="fa fa-trophy" aria-hidden="true"></i>&nbsp;Stats</a>
-
-        <a href="#VIDEOS" class="a-photos"><i class="fa fa-photo"></i>&nbsp;Videos</a>
-
-        <a href="#PHOTOS" class="a-photos"><i class="fa fa-photo"></i>&nbsp;Photos</a>
-
-
-        <a href="#MORE" class="a-more"><i class="fa fa-info-circle"></i>&nbsp;More</a>
-        <!-- <a href="#" class="a-login" style="text-shadow: 10px -8px 10px rgb(8, 4, 99);"><i class="fa fa-user-plus"></i>&nbsp;Sign Up/Login</a> -->
-      </div>
-      <div class="switch-container">
-        <div class="box">
-          <i class="fas fa-sun " id="sun"></i>
-          <i class="fas fa-moon" id="moon"></i>
-          <span class="ball"></span>
-        </div>
-      </div>
-
-
-    </nav>
-    <!--# Navbar #-->
-
-
-  </nav>
+  <!-- ............ -->
   <button class='top-scroll' onclick="topFunction()" id="Top-scroll-Btn"><img
       src="Image/favicon/top-scroll-icon.png"></img></button>
   <main>
@@ -448,8 +463,8 @@
   </script>
 
 </body>
-</footer>
 <!-- JavaScript -->
+<script src="navbar.js"></script>
 <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 <script src="./app.js"></script>
 </body>
