@@ -181,7 +181,7 @@ header {
 
 
 /*  */
-#navbar {
+/* #navbar {
   position: absolute;
   height: 120px;
   top: 0;
@@ -198,7 +198,7 @@ header {
   align-items: center;
   justify-content: space-between;
 }
-
+*/
 .logo {
   width: max-content;
   display: flex;
@@ -217,16 +217,162 @@ header {
   font-size: 30px;
 }
 
-.div-navbar {
-  width: 60%;
-  font-family: 'Righteous', sans-serif;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
+/* MY code */
+.mainnavbar {
+  height: 120px;
 }
 
+.nav-2 {
+  height: 100%;
+}
+
+.div-bg {
+  background-image: url("Image/backgroundNav.jpg");
+  height: 100%;
+  width: 100%;
+}
+
+.div-navbar {
+  padding: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -85px;
+  background-color: rgba(233, 228, 234, 0.3);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 100%;
+  padding-top: 0;
+  margin-bottom: auto;
+
+}
+
+.div-navbar {
+  /* width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly; */
+  font-family: 'Righteous', sans-serif;
+  padding: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -120px;
+  background-color: rgba(233, 228, 234, 0.3);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.div-bg {
+  background-image: url("Image/backgroundNav.jpg");
+  height: 100%;
+  width: 100%;
+}
+
+
+.div-navbar ul {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.div-navbar ul li {
+  list-style-type: none;
+}
+
+.sidebar_possition {
+  margin-top: 0;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 300px;
+  z-index: 999;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: black;
+  backdrop-filter: blur(10px);
+  box-shadow: -10px 0 10ox rgba(0, 0, 0, 0, 1);
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.sidebar li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  width: 100%;
+  height: 65px;
+  font-weight: bolder;
+  font-size: 2.5rem;
+  position: relative;
+  cursor: pointer;
+  color: black;
+
+}
+
+.close-menu {
+  justify-content: center !important;
+  align-items: flex-end !important;
+  position: absolute !important;
+  left: 0 !important;
+  top: 0 !important;
+
+}
+
+
+.menu {
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  margin-right: 5px;
+  display: none;
+}
+
+#menu-icon {
+  color: black;
+  font-size: 48px;
+}
+
+#menu-icon-close {
+  color: white;
+  font-size: 48px;
+
+}
+
+.a-color {
+  color: white;
+}
+
+.hide {
+  display: none;
+}
+
+@media(max-width:1059px) {
+  .hidenavele {
+    display: none;
+  }
+
+  .menu {
+    margin-top: 5px;
+    display: block;
+  }
+}
+
+
+/* End */
 .div-navbar a:not(.a-name) {
-  /* margin-left: 4%; */
+  margin-left: 4%;
   text-decoration: none;
   color: white;
   font-size: 21px;
@@ -245,7 +391,13 @@ header {
   text-shadow: 0 0 20px white;
 }
 
-
+.switch-container {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 1.5rem;
+}
 
 .switch-container div {
   background-image: url("./Image//stars.webp");
@@ -456,10 +608,22 @@ section h5 {
   margin: 40px;
 }
 
+/* My code */
 footer {
   background-color: #333;
   overflow: hidden;
   background-color: #333;
+}
+
+.main-footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.main-footer li {
+  list-style: none;
 }
 
 footer a {
@@ -470,8 +634,14 @@ footer a {
   color: white;
 }
 
+@media(max-width:712px) {
+  .main-footer {
+    flex-direction: column;
 
+  }
+}
 
+/* End */
 header {
   background-color: black;
 }
@@ -608,7 +778,7 @@ main {
   background-size: 55px 55px;
 }
 
-main.darkTheme{
+main.darkTheme {
   --dark-color: #303030;
   background-color: #212121;
   background-size: 55px 55px;
@@ -1024,6 +1194,43 @@ main.darkTheme{
     width: 80%;
     height: auto;
   }
+}
+
+/* .................... */
+@media(max-width:1059px) {
+  .sidebar {
+    width: 100%;
+  }
+}
+
+@media (max-width:548px) {
+  .achivements img {
+    width: 100%;
+  }
+
+  .main-info {
+    width: 100%;
+  }
+
+}
+
+@media(max-width:431px) {
+  .info-area h2 {
+    width: 100%;
+  }
+}
+
+@media(max-width:335px) {
+  .extra-info img {
+    width: 100%;
+  }
+}
+
+@media(max-width:362px) {
+  .a-name {
+    display: none;
+  }
+
 }
 
 /* =============== MEDIA QUERIES (MEDIUM DEVICES) =============== */
