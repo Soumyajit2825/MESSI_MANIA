@@ -961,6 +961,12 @@ main.darkTheme {
     object-position: -30rem;
   }
 
+  .leo>p{
+    font-size: 25px;
+  }
+  .name-reveal{
+    width: 75%;
+  }
   
   .navbar .main-nav {
     display: none;
