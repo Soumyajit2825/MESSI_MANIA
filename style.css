@@ -1163,17 +1163,33 @@ footer hr {
   .extra-info {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50% 50%;
+    width: 100%;
+    height: 40%;
   }
 
-  .extra-info img {
+  .extra-info a{
+    height: 80%;
     width: 100%;
-    height: fit-content;
+  }
+  .extra-info img {
+    width: auto;
+    height: 100%;
   }
 
   .extra-info a:nth-of-type(2) {
     grid-area: 1/2/3/3;
+    height: 80%;
   }
 
+  .stats-table .card{
+    height: 10%;
+    align-items: center;
+  }
+  .stats-table .card-heading{
+    padding: 15px 10px;
+  }
+  
   .stats-area .info-label {
     font-size: 12px;
   }
@@ -1185,9 +1201,10 @@ footer hr {
   #stats-messi-image2 {
 
     display: unset;
-    right: -50%;
+    right: 0;
     height: inherit;
     width: fit-content;
+    padding-right: 0;
   }
 
   .stats-table {
