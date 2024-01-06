@@ -1002,58 +1002,45 @@ main.darkTheme {
   color: #E1306C;
 }
 
-
-.footer {
-  background-color: #333333;
-  color: #fefefe;
-  position: relative;
+footer {
+  background-color: #333;
+  overflow: hidden;
+  background-color: #333;
+  font-size: 19px;
   width: 100%;
-  bottom: 0;
+  position: relative;
   left: 0;
+  bottom: 0;
 }
 
-.footer .content {
+.main-footer {
   display: flex;
   justify-content: space-evenly;
-  margin: 0;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
-.footer .content h4 {
-  margin-bottom: 1.3rem;
-  font-size: 19px;
+.main-footer li {
+  list-style: none;
 }
 
-footer {
+footer a {
+  text-decoration: none;
+  padding: 20px;
   text-align: center;
-  margin-bottom: 0;
+  float: left;
+  color: white;
+}
+.copyright:hover{
+  color: white;
+  text-decoration: none;
+  cursor: default;
 }
 
-footer hr {
-  margin: 2rem 0;
-}
-
-@media (max-width: 1200px) {
-  .footer .content {
-    display: flex;
+@media(max-width:712px) {
+  .main-footer {
     flex-direction: column;
-    font-size: 14px;
-  }
 
-  .footer {
-    position: relative;
-  }
-}
-
-@media (min-width: 1201px) and (max-width: 1024px) {
-  .footer .content,
-  .footer {
-    font-size: 14px;
-  }
-}
-
-@media (orientation: landscape) and (max-height: 500px) {
-  .footer {
-    position: relative;
   }
 }
 
