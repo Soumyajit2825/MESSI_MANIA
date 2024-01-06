@@ -329,6 +329,14 @@ section {
   position: relative;
   top: 40px;
   z-index: 1;
+  display: unset;
+}
+
+#stats-messi-image2 {
+  position: absolute;
+  top: 40px;
+  z-index: 1;
+  display: none;
 }
 
 #STATS {
@@ -372,9 +380,9 @@ section {
   height: 60%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
   align-items: flex-start;
-  gap: 3rem;
+  /* gap: 3rem; */
   flex-direction: column;
   width: 100%;
   font-family: 'El Messiri', sans-serif;
@@ -564,6 +572,7 @@ h2 {
   background: white;
   position: relative;
   transition: box-shadow 1s;
+  object-fit: cover;
 }
 
 
@@ -608,7 +617,7 @@ main {
   background-size: 55px 55px;
 }
 
-main.darkTheme{
+main.darkTheme {
   --dark-color: #303030;
   background-color: #212121;
   background-size: 55px 55px;
@@ -833,6 +842,10 @@ main.darkTheme{
   filter: brightness(130%);
 }
 
+#mainInfoMessiaCard {
+  width: 20%;
+}
+
 /*added hover CSS effect , filter(grayscale) effect */
 .main-info img:hover {
   filter: grayscale(50%);
@@ -925,6 +938,30 @@ main.darkTheme{
 
 /* =============== MEDIA QUERIES (SMALL DEVICES) =============== */
 @media (max-width: 745px) {
+
+
+  .dissolve .item {
+    width: unset;
+    height: 100vh;
+    object-fit: cover;
+  }
+
+  .dissolve .item:nth-child(1) {
+    object-position: -55rem;
+  }
+  .dissolve .item:nth-child(2) {
+    object-position: -50rem;
+  }
+  
+  .dissolve .item:nth-child(3) {
+    object-position: -30rem;
+  }
+  
+  .dissolve .item:nth-child(4) {
+    object-position: -30rem;
+  }
+
+  
   .navbar .main-nav {
     display: none;
   }
@@ -936,6 +973,100 @@ main.darkTheme{
 
   .navBarMobile a {
     padding: 10px;
+  }
+
+  .logo img {
+    width: 60px;
+  }
+
+  .logo a {
+    font-size: 20px;
+  }
+
+  .div-navbar a:not(.a-name) {
+    font-size: 7px;
+
+  }
+
+  .switch-container div {
+    width: 60px;
+    height: 30px;
+  }
+
+  .info-area h2 {
+    width: 90%;
+  }
+
+  #mainInfoMessiaCard {
+    width: 90%;
+  }
+
+  .achivements img {
+    width: 90%;
+    height: fit-content;
+  }
+
+  .info-area p {
+    font-size: 1.7rem;
+  }
+
+  .messi-facts {
+    margin: 40px 10px;
+    font-size: 15px;
+    text-align: start;
+  }
+
+  .messi-facts li {
+    margin: 15px 0;
+  }
+
+  #last-info-video,
+  #last-info-video>video {
+    height: fit-content;
+    width: 100%;
+  }
+
+  .achivements-div {
+    align-items: center;
+  }
+
+  .info-area .social_link {
+    font-size: 10px;
+    margin: 10px 0;
+  }
+
+  .extra-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .extra-info img {
+    width: 100%;
+    height: fit-content;
+  }
+
+  .extra-info a:nth-of-type(2) {
+    grid-area: 1/2/3/3;
+  }
+
+  .stats-area .info-label {
+    font-size: 12px;
+  }
+
+  #stats-messi-image {
+    display: none;
+  }
+
+  #stats-messi-image2 {
+
+    display: unset;
+    right: -50%;
+    height: inherit;
+    width: fit-content;
+  }
+
+  .stats-table {
+    z-index: 1;
   }
 
   #nav-icon {
@@ -1024,6 +1155,44 @@ main.darkTheme{
     width: 80%;
     height: auto;
   }
+
+  .video-area {
+    /* min-height: 60vh; */
+  }
+
+  .carousel-cell {
+    width: 80%;
+    height: 60vh;
+    /* height: 80%; */
+  }
+
+  .carousel-cell video {
+    object-fit: cover;
+  }
+
+  .carousel {
+    height: 70vh;
+  }
+
+  .image-area img {
+    width: 45%;
+    object-fit: cover;
+    height: inherit;
+    border-radius: 10px;
+  }
+
+  .image-area svg {
+    top: -42%;
+  }
+
+  .main-footer{
+    width: 100%;
+    align-items: center;
+  }
+  footer a{
+    padding: 20px 10px;
+  }
+
 }
 
 /* =============== MEDIA QUERIES (MEDIUM DEVICES) =============== */

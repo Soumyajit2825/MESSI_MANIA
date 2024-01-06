@@ -91,3 +91,8 @@ function removeDarkTheme(){
 
 
 }
+
+
+// if(window.innerWidth<=745){
+//   document.getElementById("stats-messi-image").src = './Image/messi-small-width.png'
+// }
