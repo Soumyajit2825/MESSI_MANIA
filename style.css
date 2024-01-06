@@ -180,9 +180,10 @@ header {
 
 
 
-/*  */
+/* NAVBAR */
 #navbar {
-  position: absolute;
+  position: fixed;
+  z-index: 1000;
   height: 120px;
   top: 0;
   left: 0;
@@ -190,6 +191,8 @@ header {
   margin: 0;
   border: none;
   padding: 0 20px;
+  background: rgb(0,0,0);
+  background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.8) 50%, rgba(0,0,0,1) 100%);
 }
 
 .nav-2 {
@@ -232,6 +235,16 @@ header {
   font-size: 21px;
 }
 
+.bar{
+  color: white;
+  font-size: 30px;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
 .a-name:hover,
 .a-name:visited {
   text-decoration: none;
@@ -240,12 +253,9 @@ header {
 
 }
 
-
 .div-navbar a:not(.a-name):hover {
   text-shadow: 0 0 20px white;
 }
-
-
 
 .switch-container div {
   background-image: url("./Image//stars.webp");
@@ -278,6 +288,87 @@ header {
 
 .switch-container div .ball {
   display: none;
+}
+
+
+/* BURGER */
+.burger {
+  display: none;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: rgb(226, 226, 226);
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 1024px) {
+  .div-navbar {
+      width: 60%;
+  }
+}
+
+@media screen and (max-width: 945px) {
+  body {
+      overflow-x: hidden;
+  }
+  
+  .div-navbar {
+      position: fixed;
+      right: 0px;
+      height: 60%;
+      top: 8vh;
+      background-color: rgba(255, 255, 255, .1);
+      backdrop-filter: blur(10px);
+      border: 2px solid rgba(255, 255, 255, .2);
+      border-radius: 2%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      width: 50%;
+      padding: 5% 0%;
+      transform: translateX(100%);
+      transition: transform 0.5s ease-in;
+  }
+  
+  .div-navbar a {
+      opacity: 0;
+  }
+  
+  .burger {
+      display: block;
+      cursor: pointer;
+  }
+}
+
+.nav-active {
+      transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+  from {
+      opacity: 0;
+      transform: translateX(50px);
+  }
+  to {
+      opacity: 1;
+      transform: translateX(0);
+  }
+}
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+  opacity: 0;
+}
+
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
 }
 
 main {
@@ -380,9 +471,9 @@ section {
   height: 60%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: flex-start;
-  /* gap: 3rem; */
+  font-size: 3rem;
   flex-direction: column;
   width: 100%;
   font-family: 'El Messiri', sans-serif;
@@ -463,22 +554,6 @@ img {
 section h5 {
   margin: 40px;
 }
-
-footer {
-  background-color: #333;
-  overflow: hidden;
-  background-color: #333;
-}
-
-footer a {
-  text-decoration: none;
-  padding: 20px;
-  text-align: center;
-  float: left;
-  color: white;
-}
-
-
 
 header {
   background-color: black;
@@ -660,6 +735,7 @@ main.darkTheme {
   bottom: 20px;
   right: 30px;
   z-index: 99;
+  /* top: 80%; */
   border: none;
   outline: none;
   background-color: transparent;
@@ -668,7 +744,8 @@ main.darkTheme {
 }
 
 .top-scroll:hover {
-  background-color: rgb(234, 72, 72);
+  background-color: none;
+  text-shadow: 0 0 20px white;
 }
 
 /* .image-back-div {
@@ -925,16 +1002,61 @@ main.darkTheme {
   color: #E1306C;
 }
 
-.main-footer {
-  display: flex;
-  width: 60%;
-  margin: 0 auto;
-  justify-content: space-around;
+
+.footer {
+  background-color: #333333;
+  color: #fefefe;
+  position: relative;
+  width: 100%;
+  bottom: 0;
+  left: 0;
 }
 
-.main-footer ul li {
-  list-style: none;
+.footer .content {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0;
 }
+
+.footer .content h4 {
+  margin-bottom: 1.3rem;
+  font-size: 19px;
+}
+
+footer {
+  text-align: center;
+  margin-bottom: 0;
+}
+
+footer hr {
+  margin: 2rem 0;
+}
+
+@media (max-width: 1200px) {
+  .footer .content {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+  }
+
+  .footer {
+    position: relative;
+  }
+}
+
+@media (min-width: 1201px) and (max-width: 1024px) {
+  .footer .content,
+  .footer {
+    font-size: 14px;
+  }
+}
+
+@media (orientation: landscape) and (max-height: 500px) {
+  .footer {
+    position: relative;
+  }
+}
+
 
 /* =============== MEDIA QUERIES (SMALL DEVICES) =============== */
 @media (max-width: 745px) {
@@ -989,10 +1111,7 @@ main.darkTheme {
     font-size: 20px;
   }
 
-  .div-navbar a:not(.a-name) {
-    font-size: 7px;
-
-  }
+ 
 
   .switch-container div {
     width: 60px;
