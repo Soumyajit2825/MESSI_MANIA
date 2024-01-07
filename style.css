@@ -5,6 +5,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@700&display=swap');
 /*a tags*/
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+html{
+  scroll-behavior: smooth;
+}
+
 .light {
   --bodyBg: #fff;
   --sectionEven: #fff;
@@ -34,6 +40,7 @@ body {
   /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, */
   /* Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif, "Monserra",'Montserrat', sans-serif; */
   font-family: 'Montserrat', sans-serif;
+  margin-top:5%;
 }
 
 /* css for dissolving carousel effect  */
@@ -1130,6 +1137,7 @@ footer a {
 
   .messi-facts li {
     margin: 15px 0;
+    text-align: left;
   }
 
   #last-info-video,
@@ -1322,6 +1330,12 @@ footer a {
     padding: 20px 10px;
   }
 
+}
+
+.points li{
+  /* background-color: blue; */
+  margin-top:5%;
+  text-align: left;
 }
 
 /* =============== MEDIA QUERIES (MEDIUM DEVICES) =============== */
