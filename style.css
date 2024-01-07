@@ -1137,6 +1137,7 @@ footer a {
 
   .messi-facts li {
     margin: 15px 0;
+    text-align: left;
   }
 
   #last-info-video,
@@ -1329,6 +1330,12 @@ footer a {
     padding: 20px 10px;
   }
 
+}
+
+.points li{
+  /* background-color: blue; */
+  margin-top:5%;
+  text-align: left;
 }
 
 /* =============== MEDIA QUERIES (MEDIUM DEVICES) =============== */
