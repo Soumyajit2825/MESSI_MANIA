@@ -785,6 +785,10 @@ main.darkTheme {
   padding: 0;
 }
 
+.image-area>.img{
+  z-index: 1;
+}
+
 .image-area img:hover {
   box-shadow: none;
   transform: scale(1.1);
