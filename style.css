@@ -748,6 +748,12 @@ main.darkTheme {
   background-color: transparent;
   cursor: pointer;
   border-radius: 4px;
+  align-items: center;
+  justify-content: center;
+}
+
+#top-scroll-img{
+  width: 80px;
 }
 
 .top-scroll:hover {
