@@ -994,6 +994,8 @@ main.darkTheme {
   width: 400px;
   height: 300px;
   border-radius: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
   /*added border -radius to the images */
 }
 
