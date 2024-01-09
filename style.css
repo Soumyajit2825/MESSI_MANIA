@@ -1137,13 +1137,14 @@ footer a {
 
   .messi-facts li {
     margin: 15px 0;
-    text-align: left;
+    text-align: start;
   }
 
   #last-info-video,
   #last-info-video>video {
     height: fit-content;
     width: 100%;
+    background: red;
   }
 
   .achivements-div {
@@ -1337,6 +1338,63 @@ footer a {
   margin-top:5%;
   text-align: left;
 }
+.c-1{
+  width: 80vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-top: 5vw;
+  margin-bottom: 5vw;
+  margin-left:auto;
+  margin-right: auto;
+
+}
+.card_ani1 {
+  transition: ease-in-out 800ms;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 22vw;
+  height: 22vw;
+  min-width:200px;
+  min-height:200px;
+}
+
+.card_ani1:hover{
+  transition: ease-in-out 800ms;
+}
+
+#c-1{
+  background-image: url("Image/c1_1.png");
+  
+}
+
+#c-1:hover{
+  background-image: url("Image/c1_2.png");
+}
+
+#myDiv{
+  background-image: url("Image/im2.png");
+  width: 22vw;
+  min-width:100px;
+  height: 22vw;
+  min-height: 100px;
+  min-width:200px;
+  min-height:200px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  /* background-color: red; */
+}
+
+#c-2{
+  background-image: url("Image/c2_1.png");
+}
+
+#c-2:hover{
+  background-image: url("Image/c2_2.png");
+}
+
+
 
 /* =============== MEDIA QUERIES (MEDIUM DEVICES) =============== */
 @media screen and (max-width: 1220px) {}
