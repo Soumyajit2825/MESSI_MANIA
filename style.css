@@ -748,6 +748,12 @@ main.darkTheme {
   background-color: transparent;
   cursor: pointer;
   border-radius: 4px;
+  align-items: center;
+  justify-content: center;
+}
+
+#top-scroll-img{
+  width: 80px;
 }
 
 .top-scroll:hover {
@@ -777,6 +783,10 @@ main.darkTheme {
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 1px 0px, rgba(60, 64, 67, 0.15) 0px 1px 1px 1px;
   border: 2px solid #ffffff;
   padding: 0;
+}
+
+.image-area>.img{
+  z-index: 1;
 }
 
 .image-area img:hover {
@@ -988,6 +998,8 @@ main.darkTheme {
   width: 400px;
   height: 300px;
   border-radius: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
   /*added border -radius to the images */
 }
 
