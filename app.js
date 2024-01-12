@@ -73,6 +73,7 @@ function applyDarkTheme(){
   document.querySelectorAll(".blackText").forEach((Txt)=>
   Txt.style.color = "white"
   )
+  document.getElementById('myDiv').style.backgroundImage = "url('Image/im1.png')";
   
 }
 function removeDarkTheme(){
@@ -87,6 +88,7 @@ function removeDarkTheme(){
   document.querySelectorAll(".blackText").forEach((Txt)=>
   Txt.style.color = "black"
   )
+  document.getElementById('myDiv').style.backgroundImage = "url('Image/im2.png')";
 
 
 
