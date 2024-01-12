@@ -1519,6 +1519,13 @@ footer a {
   /* background-color: red; */
 }
 
+.more_img{
+  width:300px;
+  height: 200px;
+  background-size: cover;
+  /* background: blue; */
+}
+
 #c-2{
   background-image: url("Image/c2_1.png");
 }
