@@ -34,7 +34,7 @@ _switch?.addEventListener("click", () => {
     moon.style.transform = "translateX(0)";
     moon.style.opacity = "0";
 
-   removeDarkTheme()
+    removeDarkTheme()
 
     theme = "light";
   }
@@ -62,7 +62,7 @@ window.onload = () => {
 };
 
 
-function applyDarkTheme(){
+function applyDarkTheme() {
   main.classList.add("darkTheme");
   document.getElementById("STATS").classList.add("darkTheme")
 
@@ -70,12 +70,12 @@ function applyDarkTheme(){
   secondary_heading.forEach((heading) => {
     heading.classList.add("darkTheme")
   })
-  document.querySelectorAll(".blackText").forEach((Txt)=>
-  Txt.style.color = "white"
+  document.querySelectorAll(".blackText").forEach((Txt) =>
+    Txt.style.color = "white"
   )
-  
+
 }
-function removeDarkTheme(){
+function removeDarkTheme() {
 
   main.classList.remove("darkTheme");
   document.getElementById("STATS").classList.remove("darkTheme")
@@ -84,8 +84,8 @@ function removeDarkTheme(){
     heading.classList.remove("darkTheme")
   })
 
-  document.querySelectorAll(".blackText").forEach((Txt)=>
-  Txt.style.color = "black"
+  document.querySelectorAll(".blackText").forEach((Txt) =>
+    Txt.style.color = "black"
   )
 
 
@@ -96,23 +96,23 @@ function navSlide() {
   const burger = document.querySelector(".burger");
   const nav = document.querySelector(".div-navbar");
   const navLinks = document.querySelectorAll(".div-navbar a");
-  
+
   burger.addEventListener("click", () => {
-      //Toggle Nav
-      nav.classList.toggle("nav-active");
-      
-      //Animate Links
-      navLinks.forEach((link, index) => {
-          if (link.style.animation) {
-              link.style.animation = ""
-          } else {
-              link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.5}s`;
-          }
-      });
-      //Burger Animation
-      burger.classList.toggle("toggle");
+    //Toggle Nav
+    nav.classList.toggle("nav-active");
+
+    //Animate Links
+    navLinks.forEach((link, index) => {
+      if (link.style.animation) {
+        link.style.animation = ""
+      } else {
+        link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.5}s`;
+      }
+    });
+    //Burger Animation
+    burger.classList.toggle("toggle");
   });
-  
+
 }
 
 navSlide();
@@ -127,13 +127,13 @@ navSlide();
 
 // document.querySelector('.pop-up').classList.remove('.pop-up');
 //     document.querySelector('.pop-up').classList.add('.pop-up-rem');
-document.querySelectorAll('.pop img').forEach(im =>{
-  im.onclick = () =>{
+document.querySelectorAll('.pop img').forEach(im => {
+  im.onclick = () => {
     document.querySelector('.pop-up').style.display = 'flex';
     document.querySelector('.pop-up img').src = im.getAttribute('src');
   }
 });
 
-document.querySelector('.pop-up span').onclick = () =>{
+document.querySelector('.pop-up span').onclick = () => {
   document.querySelector('.pop-up').style.display = 'none';
 };

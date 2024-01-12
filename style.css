@@ -822,7 +822,7 @@ main.darkTheme {
   background: #404040;
 }
 
-.pop-up{
+.pop-up {
   position: fixed;
   display: none;
   justify-content: center;
@@ -833,10 +833,10 @@ main.darkTheme {
   height: 100%;
   width: 100%;
   z-index: 100;
-  
+
 }
 
-.pop-up > span{
+.pop-up>span {
   position: absolute;
   top: 100px;
   right: 10px;
@@ -847,7 +847,7 @@ main.darkTheme {
   z-index: 100;
 }
 
-.pop-up > img{
+.pop-up>img {
   border: 20px solid #fff;
   transition-duration: 500ms;
 }
@@ -921,7 +921,7 @@ main.darkTheme {
 
 .info-area .social_link_wikipedia:before {
   background: #d6d6d6;
-    background: radial-gradient(circle at 30% 107%, #ffffff 0%, #c7c7c7 5%, #898989 45%, #bebebe 60%, #686868 90%);
+  background: radial-gradient(circle at 30% 107%, #ffffff 0%, #c7c7c7 5%, #898989 45%, #bebebe 60%, #686868 90%);
 }
 
 .info-area .social_link_instagram:before {
@@ -1494,7 +1494,7 @@ footer a {
     padding: 20px 10px;
   }
 
-  .pop-up > img{
+  .pop-up>img {
     width: 95%;
   }
 
