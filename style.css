@@ -2957,9 +2957,11 @@ footer a {
   height: 22vw;
   min-width:200px;
   min-height:200px;
+  border-radius: 50%;
 }
 
 .card_ani1:hover{
+  scale:1.2;
   transition: ease-in-out 800ms;
 }
 
@@ -2969,6 +2971,7 @@ footer a {
 }
 
 #c-1:hover{
+  
   background-image: url("Image/c1_2.png");
 }
 
@@ -2979,6 +2982,7 @@ footer a {
 }
 
 #c-2:hover{
+  
   background-image: url("Image/c2_2.png");
 }
 

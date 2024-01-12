@@ -89,9 +89,6 @@ function removeDarkTheme(){
   Txt.style.color = "black"
   )
   document.getElementById('myDiv').style.backgroundImage = "url('Image/im2.png')";
-
-
-
 }
 
 function navSlide() {
