@@ -115,3 +115,24 @@ function navSlide() {
 }
 
 navSlide();
+
+
+// document.querySelectorAll('.pht-content > img').forEach(image =>{
+//   image.addEventListener('click', () =>{
+//     document.querySelector('.bgh').classList.remove('.pop-up');
+//     document.querySelector('.bgh').classList.add('.pop-up-rem');
+//   })
+// })
+
+// document.querySelector('.pop-up').classList.remove('.pop-up');
+//     document.querySelector('.pop-up').classList.add('.pop-up-rem');
+document.querySelectorAll('.pop img').forEach(im =>{
+  im.onclick = () =>{
+    document.querySelector('.pop-up').style.display = 'flex';
+    document.querySelector('.pop-up img').src = im.getAttribute('src');
+  }
+});
+
+document.querySelector('.pop-up span').onclick = () =>{
+  document.querySelector('.pop-up').style.display = 'none';
+};
