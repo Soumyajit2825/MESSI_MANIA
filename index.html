@@ -180,9 +180,11 @@
     <section class="video-area">
       <h2 class="secondary_heading" id="VIDEOS">VIDEOS</h2>
       <!-- Flickity HTML init -->
-      <div class="carousel" data-flickity='{ "wrapAround": true ,"setGallerySize": false}'>
+      <div class="carousel"
+        data-flickity='{ "wrapAround": true, "autoPlay": true, "setGallerySize": false, "direction": "rtr"}'>
         <div class="carousel-cell"><video src="Video/videoplayback.mp4"
-            poster="Image/0_GettyImages-1313922671jpgong.jpg" class="clip" type="video/mp4" loop controls></video></div>
+            poster="Image/0_GettyImages-1313922671jpgong.jpg" class="clip" type="video/mp4" loop controls></video>
+        </div>
         <div class="carousel-cell"><video
             src="Video/Lionel-Messi-Best-Skill-Whatsapp-Video-Status-Song-Download-Online-2022-1.mp4"
             poster="Image/220807075403-messi-bicycle-kick-0807-restricted-large-169.jpg" class="clip" type="video/mp4"
@@ -373,11 +375,15 @@
 
 
       <h2 class="secondary_heading" id="PHOTOS">PHOTOS</h2>
+
+
+      <div class="img pop loading=" lazy" -row">
+
       <div class="img-row">
+
         <img loading="lazy" src="Image/mini__R5I4403.jpeg" alt="MESSI" style="cursor:pointer" />
         <img loading="lazy" src="Image/messi-ronaldo-1593920966.jpg" alt="MESSI v CR7" style="cursor:pointer" />
-        <img loading="lazy" src="Image/leo-raise.jpg" alt="LM10"
-          width="300px" height="200px" style="cursor:pointer" />
+        <img loading="lazy" src="Image/leo-raise.jpg" alt="LM10" width="300px" height="200px" style="cursor:pointer" />
         <img loading="lazy" src="Image/gettyimages-846141966-612x612.jpg" alt="LIONEL
               MESSI" style="cursor:pointer" />
         <img loading="lazy" src="Image/lionel-messi-hd-wallpaperkwhcv.jpg" alt="Vamos
@@ -392,10 +398,10 @@
         <img loading="lazy" src="Image/Leo.jpg" alt="" style="cursor:pointer;">
         <img loading="lazy" src="Image/Lionel-Messi-Barcelona-Champions-League-final.jpg" alt=""
           style="cursor: pointer;">
-        
+
       </div>
 
-      
+
       <!-- </div> -->
 
 
@@ -571,8 +577,7 @@
     </ul>
   </footer>
   <!-- JavaScript -->
-  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-  <script src="./app.js"></script>
+
   <script>
     document.getElementById("year").innerHTML = new Date().getFullYear();
     // Get the button
