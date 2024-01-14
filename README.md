@@ -1,4 +1,24 @@
 # MESSI_MANIA
+ <p>
+
+[![Open Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
+![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat)
+![Visitors](https://api.visitorbadge.io/api/visitors?path=Soumyajit2825%2FMESSI_MANIA%20&countColor=%23263759&style=flat)
+![GitHub forks](https://img.shields.io/github/forks/Soumyajit2825/MESSI_MANIA)
+![GitHub Repo stars](https://img.shields.io/github/stars/Soumyajit2825/MESSI_MANIA)
+![GitHub contributors](https://img.shields.io/github/contributors/Soumyajit2825/MESSI_MANIA)
+![GitHub last commit](https://img.shields.io/github/last-commit/Soumyajit2825/MESSI_MANIA)
+
+![GitHub repo size](https://img.shields.io/github/repo-size/Soumyajit2825/MESSI_MANIA)
+
+![Github](https://img.shields.io/github/license/Soumyajit2825/MESSI_MANIA)
+![GitHub issues](https://img.shields.io/github/issues/Soumyajit2825/MESSI_MANIA)
+![GitHub closed issues](https://img.shields.io/github/issues-closed-raw/Soumyajit2825/MESSI_MANIA)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/Soumyajit2825/MESSI_MANIA)
+![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed/Soumyajit2825/MESSI_MANIA)
+
+ </p>
+
 Here's a sneak peek of the website.
 ![image](https://github.com/Soumyajit2825/MESSI_MANIA/blob/main/Image/sneek.jpg)
 
