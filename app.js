@@ -71,7 +71,7 @@ function applyDarkTheme() {
     heading.classList.add("darkTheme")
   })
   document.querySelectorAll(".blackText").forEach((Txt) =>
-    Txt.style.color = "white"
+    Txt.style.color = "white");
   
   document.getElementById('myDiv').style.backgroundImage = "url('Image/im1.png')";
   
