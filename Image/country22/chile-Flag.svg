@@ -1,0 +1,122 @@
+<?xml version="1.0"?>
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:svg="http://www.w3.org/2000/svg" id="svg3039" viewBox="0 0 611.64 394.33" version="1.1">
+  <defs id="defs3043">
+    <linearGradient id="linearGradient4891" y2="259.16" gradientUnits="userSpaceOnUse" x2="557.31" y1="257.44" x1="-1.7254">
+      <stop id="stop4893" stop-color="#500000" offset="0"/>
+      <stop id="stop9551" stop-color="#c80000" offset=".51374"/>
+      <stop id="stop4889" stop-color="#500000" offset="1"/>
+    </linearGradient>
+    <linearGradient id="linearGradient4931" y2="114.22" gradientUnits="userSpaceOnUse" x2="213.95" y1="112.5" x1="581.47">
+      <stop id="stop5009" stop-color="#cacaca" offset="0"/>
+      <stop id="stop9557" stop-color="#fff" offset=".5"/>
+      <stop id="stop5011" stop-color="#c1c1c1" offset="1"/>
+    </linearGradient>
+    <linearGradient id="linearGradient4963" y2="104.74" gradientUnits="userSpaceOnUse" x2="229.41" gradientTransform="translate(0 .85421)" y1="109.05" x1="-10.353">
+      <stop id="stop4965" stop-color="#000098" offset="0"/>
+      <stop id="stop9555" stop-color="#0044d8" offset=".5"/>
+      <stop id="stop4961" stop-color="#0000c0" offset="1"/>
+    </linearGradient>
+    <linearGradient id="linearGradient4983" y2="43.606" gradientUnits="userSpaceOnUse" x2="96.841" y1="43.755" x1="-4.508">
+      <stop id="stop4933" stop-color="#a2a2a2" offset="0"/>
+      <stop id="stop9559" stop-color="#fff" offset=".44923"/>
+      <stop id="stop4929" stop-color="#9f9f9f" offset="1"/>
+    </linearGradient>
+    <filter id="filter5050" color-interpolation-filters="sRGB">
+      <feGaussianBlur id="feGaussianBlur5052" stdDeviation="9.5137065"/>
+    </filter>
+  </defs>
+  <g id="g5034" transform="translate(13.529 .19987)">
+    <path id="path5036" filter="url(#filter5050)" d="m9.3039 29.295c3.4461 111.1 4.4457 221.8 0 331.59 44.374 8.5093 88.024 18.4 146.49 0 52.954-17.848 107.67-0.53314 161.84 5.939 38.106 6.5263 74.357 3.6448 109.87-2.9695 50.151-14.85 98.982-15.175 146.49-0.98982 2.2886-111.84 1.1193-222.53-0.49492-333.08-51.32-11.538-113.8-3.013-178.16 8.914-33.99 8.329-67.97-1.702-101.96-6.929-71.27-14.754-104.63-4.776-147.48-0.99-44.67 12.417-90.638 5.409-136.6-1.485z"/>
+  </g>
+  <g id="g4881" transform="translate(13.529 .19987)">
+    <path id="path4883" d="m2.5958 176.25c46.507 7.9842 92.487 11.012 139.52 0.64894 53.974-11.892 103.15-8.1283 144.71 3.2447 46.941 12.844 93.175 10.35 136.28 1.9468 40.461-7.8886 74.026-15.86 142.44 4.7815l-0.96951 153.56c-48.259-14.556-95.416-10.822-141.47-0.64894-46.408 10.252-95.172 10.593-146.01 0.64894-45.081-8.8182-90.141-15.072-136.93-0.64894-47.677 14.698-94.131 9.5707-140.17 0z" fill="url(#linearGradient4891)"/>
+  </g>
+  <g id="g4915" transform="translate(13.529 .19987)">
+    <path id="path4923" d="m229.72 2.0139c24.839 1.3511 52.025 5.9815 80.309 12.499 34.885 6.0981 72.191 4.9323 112.27-4.5426 52.59-15.863 97.239-10.358 141.32-2.3952l1.7654 179.3c-47.057-13.862-78.686-16.907-141.23-3.2401-45.652 8.0856-88.781 11.651-137.78-2.0942-12.095-2.6733-31.665-9.6529-56.788-11.111z" fill="url(#linearGradient4931)"/>
+  </g>
+  <g id="g4947" transform="translate(13.529 .19987)">
+    <path id="path4951" d="m2.5958 177.14c40.025 9.7687 96.547 11.765 139.52 0.67424 34.733-6.577 62.288-8.1343 87.307-6.5362l0.29-168.41c-40.49-2.7972-42.06-0.1479-89.55 6.4917-49.986 10.445-95.287 5.2723-140.17-1.2979z" fill="url(#linearGradient4963)"/>
+  </g>
+  <g id="g4973" transform="translate(13.529 .19987)">
+    <path id="path4979" d="m72.775 99.745-33.389-18.882-34.484 16.801 7.64-37.59-26.634-27.603 38.111-4.351 18.022-33.86 15.914 34.901 37.773 6.676-28.276 25.921z" fill="url(#linearGradient4983)" transform="matrix(.99969 -.024698 .024698 .99969 71.214 47.164)"/>
+  </g>
+  <metadata>
+    <rdf:RDF>
+      <cc:Work>
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+        <cc:license rdf:resource="http://creativecommons.org/licenses/publicdomain/"/>
+        <dc:publisher>
+          <cc:Agent rdf:about="http://openclipart.org/">
+            <dc:title>Openclipart</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+        <dc:title>Chilean Flag 6</dc:title>
+        <dc:date>2011-02-16T14:30:05</dc:date>
+        <dc:description>An elegant Chilean flag with basic gradients. Sometimes simplicity looks good! Drawn with Inkscape.</dc:description>
+        <dc:source>http://openclipart.org/detail/118747/chilean-flag-6-by-merlin2525</dc:source>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Merlin2525</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>bandera</rdf:li>
+            <rdf:li>banderas</rdf:li>
+            <rdf:li>chile</rdf:li>
+            <rdf:li>chilean</rdf:li>
+            <rdf:li>chilena</rdf:li>
+            <rdf:li>chileno</rdf:li>
+            <rdf:li>chili</rdf:li>
+            <rdf:li>clip art</rdf:li>
+            <rdf:li>clipart</rdf:li>
+            <rdf:li>country</rdf:li>
+            <rdf:li>drapeau</rdf:li>
+            <rdf:li>drapeaus</rdf:li>
+            <rdf:li>emblem</rdf:li>
+            <rdf:li>emblema</rdf:li>
+            <rdf:li>embleme</rdf:li>
+            <rdf:li>estado</rdf:li>
+            <rdf:li>estate</rdf:li>
+            <rdf:li>estrella</rdf:li>
+            <rdf:li>etat</rdf:li>
+            <rdf:li>etoile</rdf:li>
+            <rdf:li>flag</rdf:li>
+            <rdf:li>flags</rdf:li>
+            <rdf:li>insigne</rdf:li>
+            <rdf:li>insignia</rdf:li>
+            <rdf:li>monde</rdf:li>
+            <rdf:li>mundo</rdf:li>
+            <rdf:li>pais</rdf:li>
+            <rdf:li>patria</rdf:li>
+            <rdf:li>patrie</rdf:li>
+            <rdf:li>pays</rdf:li>
+            <rdf:li>region</rdf:li>
+            <rdf:li>simbolo</rdf:li>
+            <rdf:li>star</rdf:li>
+            <rdf:li>symbol</rdf:li>
+            <rdf:li>symbole</rdf:li>
+            <rdf:li>world</rdf:li>
+            <rdf:li>south</rdf:li>
+            <rdf:li>america</rdf:li>
+            <rdf:li>am&#xC3;&#xA9;rica</rdf:li>
+            <rdf:li>del</rdf:li>
+            <rdf:li>sur</rdf:li>
+            <rdf:li>sudamerica</rdf:li>
+            <rdf:li>amerique</rdf:li>
+            <rdf:li>am&#xC3;&#xA9;rique</rdf:li>
+            <rdf:li>du</rdf:li>
+            <rdf:li>sud</rdf:li>
+            <rdf:li>l'amerique</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+      </cc:Work>
+      <cc:License rdf:about="http://creativecommons.org/licenses/publicdomain/">
+        <cc:permits rdf:resource="http://creativecommons.org/ns#Reproduction"/>
+        <cc:permits rdf:resource="http://creativecommons.org/ns#Distribution"/>
+        <cc:permits rdf:resource="http://creativecommons.org/ns#DerivativeWorks"/>
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+</svg>

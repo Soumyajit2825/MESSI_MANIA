@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Sodipodi ("http://www.sodipodi.com/") -->
+<svg
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+    xmlns:cc="http://web.resource.org/cc/"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:svg="http://www.w3.org/2000/svg"
+    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+    xmlns:ns1="http://sozi.baierouge.fr"
+    id="svg378"
+    viewBox="0 0 210 140"
+    sodipodi:version="0.32"
+    version="1.0"
+    y="0"
+    x="0"
+    sodipodi:docname="/home/sigge/venezuela.svg"
+    sodipodi:docbase="/home/sigge/"
+  >
+  <sodipodi:namedview
+      id="base"
+  />
+  <rect
+      id="rect171"
+      style="fill-rule:evenodd;stroke-width:1pt;fill:#dc0000"
+      height="46.54"
+      width="209.82"
+      y="93.476"
+      x=".19832"
+  />
+  <rect
+      id="rect256"
+      style="stroke-width:1pt;fill:#ffcb00;fill-rule:evenodd"
+      height="46.54"
+      width="209.82"
+      y=".39668"
+      x=".19832"
+  />
+  <rect
+      id="rect255"
+      style="fill-rule:evenodd;stroke-width:1pt;fill:#0000ba"
+      height="46.54"
+      width="209.82"
+      y="46.936"
+      x=".19832"
+  />
+  <g
+      id="g595"
+      transform="translate(.22163 .73177)"
+    >
+    <path
+        id="path575"
+        style="fill-rule:evenodd;stroke-width:.11287;fill:#ffffff"
+        d="m266.19 534.45l-10.41-7.43-10.36 7.5 3.85-12.19-10.33-7.53 12.78-0.11 3.97-12.16 4.05 12.13 12.79 0.02-10.28 7.6 3.94 12.17z"
+        transform="matrix(.35933 0 0 .32494 13.106 -111.63)"
+    />
+    <path
+        id="path576"
+        style="fill-rule:evenodd;stroke-width:.11287;fill:#ffffff"
+        d="m266.19 534.45l-10.41-7.43-10.36 7.5 3.85-12.19-10.33-7.53 12.78-0.11 3.97-12.16 4.05 12.13 12.79 0.02-10.28 7.6 3.94 12.17z"
+        transform="matrix(.35933 0 0 .32494 31.717 -109.56)"
+    />
+    <path
+        id="path577"
+        style="fill-rule:evenodd;stroke-width:.11287;fill:#ffffff"
+        d="m266.19 534.45l-10.41-7.43-10.36 7.5 3.85-12.19-10.33-7.53 12.78-0.11 3.97-12.16 4.05 12.13 12.79 0.02-10.28 7.6 3.94 12.17z"
+        transform="matrix(.35933 0 0 .32494 47.847 -100.46)"
+    />
+    <path
+        id="path578"
+        style="fill-rule:evenodd;stroke-width:.11287;fill:#ffffff"
+        d="m266.19 534.45l-10.41-7.43-10.36 7.5 3.85-12.19-10.33-7.53 12.78-0.11 3.97-12.16 4.05 12.13 12.79 0.02-10.28 7.6 3.94 12.17z"
+        transform="matrix(.35933 0 0 .32494 56.946 -86.815)"
+    />
+    <path
+        id="path579"
+        style="fill-rule:evenodd;stroke-width:.11287;fill:#ffffff"
+        d="m266.19 534.45l-10.41-7.43-10.36 7.5 3.85-12.19-10.33-7.53 12.78-0.11 3.97-12.16 4.05 12.13 12.79 0.02-10.28 7.6 3.94 12.17z"
+        transform="matrix(-.35933 0 0 .32494 178.28 -109.56)"
+    />
+    <path
+        id="path580"
+        style="fill-rule:evenodd;stroke-width:.11287;fill:#ffffff"
+        d="m266.19 534.45l-10.41-7.43-10.36 7.5 3.85-12.19-10.33-7.53 12.78-0.11 3.97-12.16 4.05 12.13 12.79 0.02-10.28 7.6 3.94 12.17z"
+        transform="matrix(-.35933 0 0 .32494 162.15 -100.46)"
+    />
+    <path
+        id="path581"
+        style="fill-rule:evenodd;stroke-width:.11287;fill:#ffffff"
+        d="m266.19 534.45l-10.41-7.43-10.36 7.5 3.85-12.19-10.33-7.53 12.78-0.11 3.97-12.16 4.05 12.13 12.79 0.02-10.28 7.6 3.94 12.17z"
+        transform="matrix(-.35933 0 0 .32494 153.05 -86.815)"
+    />
+  </g
+  >
+  <metadata
+    >
+    <rdf:RDF
+      >
+      <cc:Work
+        >
+        <dc:format
+          >image/svg+xml</dc:format
+        >
+        <dc:type
+            rdf:resource="http://purl.org/dc/dcmitype/StillImage"
+        />
+        <cc:license
+            rdf:resource="http://creativecommons.org/licenses/publicdomain/"
+        />
+        <dc:publisher
+          >
+          <cc:Agent
+              rdf:about="http://openclipart.org/"
+            >
+            <dc:title
+              >Openclipart</dc:title
+            >
+          </cc:Agent
+          >
+        </dc:publisher
+        >
+        <dc:title
+          >venezuela flag</dc:title
+        >
+        <dc:date
+          >2006-11-06T11:58:06</dc:date
+        >
+        <dc:description
+        />
+        <dc:source
+          >https://openclipart.org/detail/1316/venezuela-flag-by-yves_guillou</dc:source
+        >
+        <dc:creator
+          >
+          <cc:Agent
+            >
+            <dc:title
+              >yves_guillou</dc:title
+            >
+          </cc:Agent
+          >
+        </dc:creator
+        >
+        <dc:subject
+          >
+          <rdf:Bag
+            >
+            <rdf:li
+              >flag</rdf:li
+            >
+            <rdf:li
+              >south america</rdf:li
+            >
+            <rdf:li
+              >venezuela</rdf:li
+            >
+          </rdf:Bag
+          >
+        </dc:subject
+        >
+      </cc:Work
+      >
+      <cc:License
+          rdf:about="http://creativecommons.org/licenses/publicdomain/"
+        >
+        <cc:permits
+            rdf:resource="http://creativecommons.org/ns#Reproduction"
+        />
+        <cc:permits
+            rdf:resource="http://creativecommons.org/ns#Distribution"
+        />
+        <cc:permits
+            rdf:resource="http://creativecommons.org/ns#DerivativeWorks"
+        />
+      </cc:License
+      >
+    </rdf:RDF
+    >
+  </metadata
+  >
+</svg
+>

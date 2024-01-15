@@ -1592,6 +1592,15 @@ footer a {
   /* background: blue; */
 }
 
+#wim-text{
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.wim-text2{
+  font-size: min(4vw, 4vh);
+}
+
 /* =============== MEDIA QUERIES (MEDIUM DEVICES) =============== */
 @media screen and (max-width: 1220px) {}
 
