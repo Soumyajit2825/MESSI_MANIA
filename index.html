@@ -460,11 +460,11 @@
 
 
   </nav>
-  <button class='top-scroll' onclick="topFunction()" id="Top-scroll-Btn">
+  <!-- <button class='top-scroll' onclick="topFunction()" id="Top-scroll-Btn">
     <img id="top_scroll" src="Image/favicon/top-scroll-icon.svg"></img>
-  </button>
+  </button> -->
   <button class='top-scroll' onclick="topFunction()" id="Top-scroll-Btn">
-    <img id="top-scroll-img" src="Image/favicon/top-scroll-icon.png"></img>
+    <img id="top-scroll-img" src="Image/scroll.png"></img>
   </button>
   <main>
     <section class="stats-area">
@@ -2561,6 +2561,10 @@
     function topFunction() {
       document.body.scrollTop = 0;
       document.documentElement.scrollTop = 0;
+      var scroll = document.getElementById("top-scroll-img")
+      window.addEventListener("scroll", function(){
+        scroll.style.transform = "rotate("+window.pageYOffset +"deg)";
+})
     }
   </script>
   <script>
