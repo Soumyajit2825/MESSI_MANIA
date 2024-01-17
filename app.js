@@ -137,3 +137,5 @@ document.querySelectorAll('.pop img').forEach(im => {
 document.querySelector('.pop-up span').onclick = () => {
   document.querySelector('.pop-up').style.display = 'none';
 };
+
+
