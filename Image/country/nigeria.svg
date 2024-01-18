@@ -1,18 +1,1 @@
-<svg width="1500" height="1000" viewBox="0 0 1500 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g clip-path="url(#clip0_51_16)">
-<rect width="1500" height="1000" fill="white"/>
-<g clip-path="url(#clip1_51_16)">
-<path d="M1749.95 0H-250V1000H1749.95V0Z" fill="white"/>
-<path d="M1749.95 0H1083.3V1000H1749.95V0Z" fill="#36A100"/>
-<path d="M416.65 0H-250V1000H416.65V0Z" fill="#36A100"/>
-</g>
-</g>
-<defs>
-<clipPath id="clip0_51_16">
-<rect width="1500" height="1000" fill="white"/>
-</clipPath>
-<clipPath id="clip1_51_16">
-<rect width="1999.96" height="1000" fill="white" transform="translate(-250)"/>
-</clipPath>
-</defs>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="1000" fill="none" viewBox="0 0 1500 1000"><g clip-path="url(#clip0_51_16)"><rect width="1500" height="1000" fill="#fff"/><g clip-path="url(#clip1_51_16)"><path fill="#fff" d="M1749.95 0H-250V1000H1749.95V0Z"/><path fill="#36A100" d="M1749.95 0H1083.3V1000H1749.95V0Z"/><path fill="#36A100" d="M416.65 0H-250V1000H416.65V0Z"/></g></g><defs><clipPath id="clip0_51_16"><rect width="1500" height="1000" fill="#fff"/></clipPath><clipPath id="clip1_51_16"><rect width="1999.96" height="1000" fill="#fff" transform="translate(-250)"/></clipPath></defs></svg>
