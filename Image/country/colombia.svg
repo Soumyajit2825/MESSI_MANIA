@@ -1,18 +1,1 @@
-<svg width="1500" height="1000" viewBox="0 0 1500 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g clip-path="url(#clip0_51_6)">
-<rect width="1500" height="1000" fill="white"/>
-<g clip-path="url(#clip1_51_6)">
-<path d="M1500.01 0H0V1000H1500.01V0Z" fill="#FFE800"/>
-<path d="M1500.01 500H0V1000H1500.01V500Z" fill="#00148E"/>
-<path d="M1500.01 750.007H0V1000H1500.01V750.007Z" fill="#DA0010"/>
-</g>
-</g>
-<defs>
-<clipPath id="clip0_51_6">
-<rect width="1500" height="1000" fill="white"/>
-</clipPath>
-<clipPath id="clip1_51_6">
-<rect width="1500.01" height="1000" fill="white"/>
-</clipPath>
-</defs>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="1000" fill="none" viewBox="0 0 1500 1000"><g clip-path="url(#clip0_51_6)"><rect width="1500" height="1000" fill="#fff"/><g clip-path="url(#clip1_51_6)"><path fill="#FFE800" d="M1500.01 0H0V1000H1500.01V0Z"/><path fill="#00148E" d="M1500.01 500H0V1000H1500.01V500Z"/><path fill="#DA0010" d="M1500.01 750.007H0V1000H1500.01V750.007Z"/></g></g><defs><clipPath id="clip0_51_6"><rect width="1500" height="1000" fill="#fff"/></clipPath><clipPath id="clip1_51_6"><rect width="1500.01" height="1000" fill="#fff"/></clipPath></defs></svg>
