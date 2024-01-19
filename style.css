@@ -1252,12 +1252,12 @@ footer a {
 }
 
 ::-webkit-scrollbar {
-  width: 15px;
+  width: 10px;
 }
 
 ::-webkit-scrollbar-track {
   /* background: linear-gradient(#7ab6e0,#7ab6e0,#7ab6e0,#ffffff, #edbb00 #ffffff,#7ab6e0,#7ab6e0, #7ab6e0); */
-  background: linear-gradient(#7ab6e0, #7ab6e0, #ffffff, #7ab6e0, #7ab6e0);
+  background: linear-gradient(#7ab6e0, #7ab6e0, #ffffff, #7ab6e0, #ffffff, #7ab6e0,#ffffff, #7ab6e0, #7ab6e0);
   border-radius: -20px;
 }
 

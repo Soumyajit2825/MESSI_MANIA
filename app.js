@@ -14,11 +14,10 @@ navIcon?.addEventListener("click", () => {
 });
 
 let ltheme = localStorage.getItem("theme");
-console.log(ltheme);
+
 let theme = ltheme === null ? "light" : ltheme;
 
 _switch?.addEventListener("click", () => {
-  console.log("listener ran bruv");
   if (theme === "light") {
     sun.style.transform = "translateX(45px) rotate(250deg) ";
     sun.style.opacity = "0";
@@ -72,9 +71,9 @@ function applyDarkTheme() {
   })
   document.querySelectorAll(".blackText").forEach((Txt) =>
     Txt.style.color = "white");
-  
+
   document.getElementById('myDiv').style.backgroundImage = "url('Image/im1.png')";
-  
+
 
 }
 function removeDarkTheme() {
