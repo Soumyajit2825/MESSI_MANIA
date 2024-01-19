@@ -1,0 +1,250 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.time{
+    font-size: 5rem;
+}
+
+.t-line{
+    font-size: 2rem;
+}
+
+button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+a {
+  color: inherit;
+}
+
+body {
+  font: normal 16px/1.5 "Helvetica Neue", sans-serif;
+  background: #456990;
+  color: #fff;
+}
+
+/* .section SECTION
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.section {
+  background: #f45b69;
+  padding: 50px 0;
+}
+
+.section .container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.section h1 {
+  font-size: 2.5rem;
+}
+
+.section h2 {
+  font-size: 1.3rem;
+}
+
+/* TIMELINE
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.timeline {
+  white-space: nowrap;
+  overflow-x: hidden;
+}
+
+.timeline ol {
+  font-size: 0;
+  width: 100vw;
+  padding: 250px 0;
+  transition: all 1s;
+}
+
+.timeline ol li {
+  position: relative;
+  display: inline-block;
+  list-style-type: none;
+  width: 160px;
+  height: 3px;
+  background: #2e09e7;
+}
+
+.timeline ol li:last-child {
+  width: 280px;
+}
+
+.timeline ol li:not(:first-child) {
+  margin-left: 14px;
+}
+
+.timeline ol li:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: calc(100% + 1px);
+  bottom: 0;
+  width: 22px;
+  height: 22px;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  background: linear-gradient(#7ab6e0,#fff);
+  z-index: 100;
+}
+
+.timeline ol li div{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: calc(100% + 7px);
+  width: 280px;
+  height: 250px;
+  padding: 7px;
+  font-size: 1rem;
+  white-space: normal;
+  color: black;
+  background-image: url('./uio.png');
+  background-size: cover;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.timeline ol li div h1{
+    color: #fff;
+    font-size: 2.2rem;
+}
+
+.timeline ol li div time{
+    color: #fff;
+    font-size: 1.7rem;
+}
+
+.timeline ol li div p{
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.timeline ol li div::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+.timeline ol li:nth-child(odd) div {
+  top: -16px;
+  transform: translateY(-100%);
+}
+
+.timeline ol li:nth-child(odd) div::before {
+  top: 100%;
+  border-width: 8px 8px 0 0;
+  border-color: red transparent transparent transparent;
+}
+
+.timeline ol li:nth-child(even) div {
+  top: calc(100% + 16px);
+}
+
+.timeline ol li:nth-child(even) div::before {
+  top: -8px;
+  border-width: 8px 0 0 8px;
+  border-color: transparent transparent transparent red;
+}
+
+.timeline time {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+/* TIMELINE ARROWS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.timeline .arrows {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.timeline .arrows .arrow__prev {
+  margin-right: 20px;
+}
+
+.timeline .disabled {
+  opacity: 0.5;
+}
+
+.timeline .arrows img {
+  width: 65px;
+  height: 65px;
+}
+
+/* GENERAL MEDIA QUERIES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+@media screen and (max-width: 599px) {
+  .timeline ol,
+  .timeline ol li {
+    width: auto;
+  }
+
+  .timeline ol {
+    padding: 0;
+    transform: none !important;
+  }
+
+  .timeline ol li {
+    display: block;
+    height: auto;
+    background: #2e09e7;
+  }
+
+  .timeline ol li:first-child {
+    margin-top: 25px;
+  }
+
+  .timeline ol li:not(:first-child) {
+    margin-left: auto;
+  }
+
+  .timeline ol li div {
+    position: static;
+    width: 94%;
+    height: auto !important;
+    margin: 0 auto 25px;
+    background-image: url('./tyu.png');
+    background-size: cover;
+  }
+
+  .timeline ol li:nth-child(odd) div {
+    transform: none;
+  }
+
+  .timeline ol li:nth-child(odd) div::before,
+  .timeline ol li:nth-child(even) div::before {
+    left: 50%;
+    top: 100%;
+    transform: translateX(-50%);
+    border: none;
+    border-left: 1px solid #2e09e7;
+    height: 25px;
+  }
+
+  .timeline ol li:last-child,
+  .timeline ol li:nth-last-child(2) div::before,
+  .timeline ol li:not(:last-child)::after,
+  .timeline .arrows {
+    display: none;
+  }
+}
