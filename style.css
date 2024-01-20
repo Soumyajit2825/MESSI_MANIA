@@ -41,6 +41,7 @@ body {
   /* Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif, "Monserra",'Montserrat', sans-serif; */
   font-family: 'Montserrat', sans-serif;
   margin-top: 5%;
+  scroll-behavior: smooth;
 }
 
 /* css for dissolving carousel effect  */
@@ -346,6 +347,7 @@ header {
     justify-content: center;
     filter: opacity(0.9);
   }
+
   .div-navbar a:not(.a-name) {
     /* margin-left: 4%; */
     text-decoration: none;
@@ -362,7 +364,7 @@ header {
     border-radius: 25px;
     text-shadow: 0 0 6px white;
     border: .5px solid;
-}
+  }
 
   .div-navbar a {
     opacity: 0;
@@ -1257,7 +1259,7 @@ footer a {
 
 ::-webkit-scrollbar-track {
   /* background: linear-gradient(#7ab6e0,#7ab6e0,#7ab6e0,#ffffff, #edbb00 #ffffff,#7ab6e0,#7ab6e0, #7ab6e0); */
-  background: linear-gradient(#7ab6e0, #7ab6e0, #ffffff, #7ab6e0, #ffffff, #7ab6e0,#ffffff, #7ab6e0, #7ab6e0);
+  background: linear-gradient(#7ab6e0, #7ab6e0, #ffffff, #7ab6e0, #ffffff, #7ab6e0, #ffffff, #7ab6e0, #7ab6e0);
   border-radius: -20px;
 }
 
@@ -1512,7 +1514,7 @@ footer a {
     height: auto;
   }
 
- 
+
 
   .carousel-cell {
     width: 80%;
