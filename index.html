@@ -326,8 +326,9 @@
       height: 50vw;
     }
 
-    .box2 {
-      position: relative;
+    
+.box2 {
+  position: relative;
       width: 90vw;
       height: 50vw;
       border-radius: 20px;
@@ -342,8 +343,28 @@
       background-image: url("Image/leo-raise2.webp");
       background-size: cover;
       background-repeat: no-repeat;
-      /* margin-top:10%; */
-    }
+      backdrop-filter: blur(15px);
+      border: 2px solid rgba(255, 255, 255, 0.4);
+      box-shadow: 0 0 30px rgba(0, 255, 255, 0.3);
+      animation: floating 3s ease-in-out infinite;
+      transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+      will-change: transform;
+}
+
+/* Floating Animation */
+@keyframes floating {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+/* 3D Parallax Effect */
+.box2:hover {
+  transform: perspective(1000px) rotateX(5deg) rotateY(5deg);
+  box-shadow: 0 0 50px rgba(0, 255, 255, 0.7);
+}
+
+
 
     .container {
       width: 90vw;
@@ -573,6 +594,8 @@
             class="clip" type="video/mp4" loop controls></video></div>
         <div class="carousel-cell"> <video src="Video/talking-to-the-moon-x-playdate-lionel-messi.mp4"
             poster="Image/messi-goat.webp" class="clip" type="video/mp4" loop controls></video></div>
+            <div class="carousel-cell"> <video src="Video/leo.mp4"
+              poster="Image/messi-goat.webp" class="clip" type="video/mp4" loop controls></video></div>
 
       </div>
     </section>
@@ -740,43 +763,40 @@
 
 
 
-
       <h2 class="secondary_heading" id="PHOTOS">PHOTOS</h2>
 
-
-      <div class="img pop-row" loading=" lazy">
-
-        <div class="img-row">
-
-          <img data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" loading="lazy"
-            src="Image/mini__R5I4403.jpeg" alt="MESSI" style="cursor:pointer" />
-          <img data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400" loading="lazy"
-            src="Image/messi-ronaldo-1593920966.webp" alt="MESSI v CR7" style="cursor:pointer" />
-          <img data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600" loading="lazy"
-            src="Image/leo-raise.webp" alt="LM10" width="300px" height="200px" style="cursor:pointer" />
-          <img data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800" loading="lazy"
-            src="Image/gettyimages-846141966-612x612.webp" alt="LIONEL
-              MESSI" style="cursor:pointer" />
-          <img data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" loading="lazy"
-            src="Image/lionel-messi-hd-wallpaperkwhcv.webp" alt="Vamos
-              Messi" style="cursor:pointer" />
-          <img alt="Messi" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400" loading="lazy"
-            src="Image/6WHENYGXDJIB7KC72MMN3ZIQWU.webp" alt="MESSI MANIA" style="cursor:pointer" />
-          <img alt="Messi" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600" loading="lazy"
-            src="Image/0_GettyImages-1313922671jpgong.webp" style="cursor:pointer" />
-          <img alt="Messi" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800" loading="lazy"
-            src="Image/messi-une.webp" style="cursor:pointer" />
-          <img alt="Messi" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" loading="lazy"
-            src="Image/stats-background.webp" style="cursor:pointer" />
-          <img alt="Messi" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400" loading="lazy"
-            src="Image/lionel-messi-fc-barcelona-uefa-champions-league-quarter-final-second-leg-match-juventus-194645949.webp"
-            style="cursor:pointer;">
-          <img alt="Messi" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600" loading="lazy"
-            src="Image/Leo.webp" style="cursor:pointer;">
-          <img alt="Messi" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800" loading="lazy"
-            src="Image/Lionel-Messi-Barcelona-Champions-League-final.webp" style="cursor: pointer;">
-
+      <div class="image-area"> <!-- ✅ Added this wrapper -->
+        <div class="img pop-row" loading="lazy">
+          <div class="img-row">
+            <img data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" loading="lazy"
+              src="Image/mini__R5I4403.jpeg" alt="MESSI" style="cursor:pointer" />
+            <img data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400" loading="lazy"
+              src="Image/messi-ronaldo-1593920966.webp" alt="MESSI v CR7" style="cursor:pointer" />
+            <img data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600" loading="lazy"
+              src="Image/leo-raise.webp" alt="LM10" width="300px" height="200px" style="cursor:pointer" />
+            <img data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800" loading="lazy"
+              src="Image/gettyimages-846141966-612x612.webp" alt="LIONEL MESSI" style="cursor:pointer" />
+            <img data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" loading="lazy"
+              src="Image/lionel-messi-hd-wallpaperkwhcv.webp" alt="Vamos Messi" style="cursor:pointer" />
+            <img data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400" loading="lazy"
+              src="Image/6WHENYGXDJIB7KC72MMN3ZIQWU.webp" alt="MESSI MANIA" style="cursor:pointer" />
+            <img data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600" loading="lazy"
+              src="Image/0_GettyImages-1313922671jpgong.webp" style="cursor:pointer" />
+            <img data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800" loading="lazy"
+              src="Image/messi-une.webp" style="cursor:pointer" />
+            <img data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" loading="lazy"
+              src="Image/stats-background.webp" style="cursor:pointer" />
+            <img data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400" loading="lazy"
+              src="Image/lionel-messi-fc-barcelona-uefa-champions-league-quarter-final-second-leg-match-juventus-194645949.webp"
+              style="cursor:pointer;">
+            <img data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600" loading="lazy"
+              src="Image/Leo.webp" style="cursor:pointer;">
+            <img data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800" loading="lazy"
+              src="Image/Lionel-Messi-Barcelona-Champions-League-final.webp" style="cursor: pointer;">
+          </div>
         </div>
+      </div> <!-- ✅ Closing the new wrapper -->
+      
 
 
         <!-- </div> -->

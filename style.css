@@ -762,7 +762,9 @@ main.darkTheme {
 
 .img-row {
   z-index: 1;
+  
 }
+
 
 .top-scroll {
   display: none;
@@ -791,26 +793,28 @@ main.darkTheme {
 
 
 
-.image-area img {
+.image-area>.img {
+  z-index: 1;
+}
+
+.img-row img {
   width: 300px;
   height: 200px;
   border-radius: 15px;
   background: white;
-  transition: transform 0.2s ease-in-out;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 1px 0px, rgba(60, 64, 67, 0.15) 0px 1px 1px 1px;
   border: 2px solid #ffffff;
   padding: 0;
 }
 
-.image-area>.img {
-  z-index: 1;
+.img-row img:hover {
+  transform: scale(1.1) rotate(2deg) !important;
+  box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.8) !important;
+  filter: brightness(120%) contrast(105%) !important;
 }
 
-.image-area img:hover {
-  box-shadow: none;
-  transform: scale(1.1);
-  filter: brightness(120%);
-}
+
 
 .image-area .img-row {
   display: flex;
