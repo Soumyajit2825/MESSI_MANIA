@@ -126,4 +126,20 @@
       });
     }
   })();
+
   
+  
+  
+  
+document.addEventListener("DOMContentLoaded", function () {
+    const timeline = document.querySelector(".timeline ol");
+    if (timeline) {
+        timeline.scrollLeft = timeline.scrollWidth;
+    }
+});
+document.addEventListener("DOMContentLoaded", function () {
+  const timeline = document.querySelector(".timeline ol");
+  if (timeline) {
+      timeline.scrollLeft = timeline.scrollWidth;
+  }
+});
