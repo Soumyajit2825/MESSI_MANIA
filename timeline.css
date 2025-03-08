@@ -171,25 +171,43 @@ body {
 
 /* TIMELINE ARROWS
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+.timeline {
+  position: relative;
+}
 
 .timeline .arrows {
+  position: absolute;
+  top: 35%;
+  left: 0;
+  width: 100%;
   display: flex;
-  justify-content: center;
-  margin-bottom: 20px;
+  justify-content: space-between;
+  transform: translateY(-50%);
+  padding: 0; 
+}
+
+.timeline .arrows .arrow {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
 }
 
 .timeline .arrows .arrow__prev {
-  margin-right: 20px;
+  margin-left: 10px; 
+}
+
+.timeline .arrows .arrow__next {
+  margin-right: 10px; 
 }
 
 .timeline .disabled {
   opacity: 0.5;
+  cursor: not-allowed;
 }
 
-.timeline .arrows img {
-  width: 65px;
-  height: 65px;
-}
+
 
 /* GENERAL MEDIA QUERIES
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
