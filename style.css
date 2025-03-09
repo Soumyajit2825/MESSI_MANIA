@@ -59,31 +59,53 @@ header {
 }
 
 .carousel.dissolve {
-  height: 100dvh;
+  height: 200%;
+  width: 100%;
+  display: grid;
+  padding: 1rem;
+  grid-template-columns:1.6fr 2.4fr;
+  column-gap: 1rem;
 }
-
+.dissolve .txt {
+  margin-top: 27rem;
+  
+  padding: 6rem;
+   /* background-color: rgb(166, 30, 30);  */
+    color: white;
+    font-size: 20px;
+    font-family: 'El Messiri', sans-serif;
+    line-height: 1.7;
+}
 .dissolve .item {
   position: absolute;
-  width: 100%;
+  width: 90%;
   height: auto;
-  left: 0;
   right: 0;
   opacity: 0;
-  padding: 0;
-  filter: brightness(0.5);
+  padding-top: 7rem;
+  padding-left: 40rem;
+  padding-right: 0;
+  filter: brightness(0.9);
+  object-fit: cover;
   animation: dissolve 20s linear infinite;
 }
 
+.dissolve .item:nth-child(1) {
+  height:100%;
+}
 .dissolve .item:nth-child(2) {
-  animation-delay: 5s;
+  height:100%;
+  animation-delay: 4s;
 }
 
 .dissolve .item:nth-child(3) {
-  animation-delay: 10s;
+  height:100%;
+  animation-delay: 8s;
 }
 
 .dissolve .item:nth-child(4) {
-  animation-delay: 15s;
+  height:100%;
+  animation-delay: 12s;
 }
 
 @-webkit-keyframes dissolve {
@@ -148,9 +170,9 @@ header {
 
 .name-reveal {
   position: absolute;
-  bottom: 100px;
+  top: 13rem;
   left: 20px;
-  width: 35%;
+  width: 37%;
 }
 
 .messi,
@@ -1273,27 +1295,41 @@ footer a {
 /* =============== MEDIA QUERIES (SMALL DEVICES) =============== */
 @media (max-width: 745px) {
 
-
-  .dissolve .item {
-    width: unset;
-    height: 100vh;
-    object-fit: cover;
+  .carousel.dissolve {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
   }
 
-  .dissolve .item:nth-child(1) {
-    object-position: -55rem;
+  .dissolve .txt {
+    font-size: 12px;
+    grid-column-start: 1;
+    grid-column-end: 4;  }
+
+  .dissolve .item {
+    width: 100%;
+    padding: 0;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    object-fit: cover;
+    opacity: 0;
+    filter: brightness(0.5);
+    opacity: 1 !important;
+    visibility: visible;
+    animation: dissolve 20s linear infinite;
   }
 
   .dissolve .item:nth-child(2) {
-    object-position: -50rem;
+    animation-delay: 4s;
   }
 
   .dissolve .item:nth-child(3) {
-    object-position: -30rem;
+    animation-delay: 8s;
   }
 
   .dissolve .item:nth-child(4) {
-    object-position: -30rem;
+    animation-delay: 12s;
   }
 
   .leo>p {
