@@ -49,6 +49,7 @@ Thanks goes to these wonderful people 💜
     <td align="center"><a href="https://github.com/smitioswal"><img src="https://avatars.githubusercontent.com/u/92663204?v=4" width="100px;" alt=""/><br /><sub><b>smitioswal</b></sub></a><br /><a title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/BibhavPaudel"><img src="https://avatars.githubusercontent.com/u/104025165?v=4" width="100px;" alt=""/><br /><sub><b>BibhavPaudel</b></sub></a><br /><a title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/TriinK"><img src="https://avatars.githubusercontent.com/u/33719534?v=4" width="100px;" alt=""/><br /><sub><b>TriinK</b></sub></a><br /><a title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/IndraniSaha100"><img src="https://avatars.githubusercontent.com/u/175301308?v=4" width="100px;" alt=""/><br /><sub><b>Indrani Saha</b></sub></a><br /><a title="Code">💻</a></td>
   </tr>
   </table>
 
