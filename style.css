@@ -63,7 +63,7 @@ header {
   width: 100%;
   display: grid;
   padding: 1rem;
-  grid-template-columns:1.6fr 2.4fr;
+  grid-template-columns:1.4fr 2.6fr;
   column-gap: 1rem;
 }
 .dissolve .txt {
@@ -83,7 +83,7 @@ header {
   right: 0;
   opacity: 0;
   padding-top: 7rem;
-  padding-left: 40rem;
+  padding-left: 44rem;
   padding-right: 0;
   filter: brightness(0.9);
   object-fit: cover;
