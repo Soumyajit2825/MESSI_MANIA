@@ -555,11 +555,12 @@ section {
 }
 
 .stats-table .card-text {
-  font-size: 20px;
-  color: #ffffff;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: bold;
-  padding: 15px;
+  opacity: 0;
+  transition: opacity 0.5s ease-in;
+}
+
+.stats-table .card-text.animate {
+  opacity: 1;
 }
 
 .extra-info img {
