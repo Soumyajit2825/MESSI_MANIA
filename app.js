@@ -137,4 +137,45 @@ document.querySelector('.pop-up span').onclick = () => {
   document.querySelector('.pop-up').style.display = 'none';
 };
 
+// Stats number animation
+function setupStatsAnimation() {
+  const statsNumbers = document.querySelectorAll('.stats-table .card-text');
 
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const element = entry.target;
+        element.classList.add('animate');
+        animateNumber(element);
+        observer.unobserve(element);
+      }
+    });
+  }, { threshold: 0.5 });
+
+  statsNumbers.forEach(el => observer.observe(el));
+}
+
+function animateNumber(element) {
+  const target = parseInt(element.textContent, 10);
+  element.textContent = '0';
+
+  const duration = 2000;
+  const startTime = Date.now();
+
+  const update = () => {
+    const elapsed = Date.now() - startTime;
+    if (elapsed >= duration) {
+      element.textContent = target;
+      return;
+    }
+    const progress = elapsed / duration;
+    const current = Math.floor(progress * target);
+    element.textContent = current;
+    requestAnimationFrame(update);
+  };
+
+  requestAnimationFrame(update);
+}
+
+// Initialize stats animation
+setupStatsAnimation();
