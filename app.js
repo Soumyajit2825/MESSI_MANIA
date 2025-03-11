@@ -7,6 +7,7 @@ const _switch = document.querySelector(".switch-container");
 const box = document.querySelector(".box");
 let main = document.getElementsByTagName('main')[0]
 let secondary_heading = document.querySelectorAll(".secondary_heading")
+const currentAge = document.querySelector('.age > b')
 
 navIcon?.addEventListener("click", () => {
   navBar.classList.toggle("navBarMobile");
@@ -154,6 +155,25 @@ function setupStatsAnimation() {
 
   statsNumbers.forEach(el => observer.observe(el));
 }
+// age calculator
+const calculateAge = ((dob)=> {
+  const birthDate = new Date(dob);
+  const today = new Date();
+  
+  let age = today.getFullYear() - birthDate.getFullYear();
+  const monthDiff = today.getMonth() - birthDate.getMonth();
+  const dayDiff = today.getDate() - birthDate.getDate();
+
+  if (monthDiff < 0 || (monthDiff === 0 && dayDiff < 0)) {
+      age--;
+  }
+
+  return age;
+})
+
+const age = calculateAge("1987-06-24");
+const currentYear = new Date().getFullYear();
+currentAge.innerHTML = `Age as on ${currentYear} (${age} years)`
 
 function animateNumber(element) {
   const target = parseInt(element.textContent, 10);
