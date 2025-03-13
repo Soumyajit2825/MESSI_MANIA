@@ -42,13 +42,21 @@ body {
   font-family: 'Montserrat', sans-serif;
   margin-top: 5%;
   scroll-behavior: smooth;
+  background-color: #1c1d1e; /* Keep this */
+  color: #f4f7fb; /* Change text color for better contrast */
 }
+
 
 /* css for dissolving carousel effect  */
 
 
 header {
   overflow: hidden;
+}
+
+h1, h2, h3 {
+  font-family: 'Oswald', sans-serif; 
+  font-weight: 600;
 }
 
 .dissolve {
@@ -222,7 +230,21 @@ header {
   border: none;
   padding: 0 20px;
   background: rgb(0, 0, 0);
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 50%, rgba(0, 0, 0, 1) 100%);
+  background: linear-gradient(0deg,  #1c1d1e, #333);
+}
+
+.navbar .div-navbar a {
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.navbar .div-navbar a:hover {
+  color: #f4f7fb; 
+  text-decoration: underline; 
+}
+
+.navbar .div-navbar a.active {
+  color: #f4f7fb; 
+  font-weight: bold; 
 }
 
 .nav-2 {
@@ -238,6 +260,7 @@ header {
   align-items: center;
 }
 
+
 .logo img {
   width: 100px;
 }
@@ -249,9 +272,12 @@ header {
 
   font-size: 30px;
 }
-
-.div-navbar {
-  width: 60%;
+.logo img:hover {
+  transform: scale(1.1); 
+  transition: transform 0.3s ease;
+}
+.div-navbar{
+  width:60%;
   font-family: 'Righteous', sans-serif;
   display: flex;
   align-items: center;
@@ -397,6 +423,7 @@ header {
     cursor: pointer;
   }
 }
+  
 
 .nav-active {
   transform: translateX(0%);
@@ -1008,6 +1035,11 @@ main.darkTheme {
   padding: 20px;
 }
 
+
+.form-section input:focus, .form-section textarea:focus {
+  border-color: #5694e6; 
+  outline: none; 
+}
 /*  */
 #image-hover {
   width: 100%;
@@ -1215,16 +1247,25 @@ main.darkTheme {
   color: #E1306C;
 }
 
+.social-links a:hover {
+  color: #f4f7fb; 
+  transform: scale(1.2); 
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
 footer {
   background-color: #333;
   overflow: hidden;
-  background-color: #333;
   font-size: 19px;
   width: 100%;
   position: relative;
   left: 0;
   bottom: 0;
+  color: #f4f7fb;
+  text-align: center;
+  padding: 20px 0;
 }
+
 
 .main-footer {
   display: flex;
@@ -1236,7 +1277,13 @@ footer {
 .main-footer li {
   list-style: none;
 }
+ .main-footer li:hover
+ {
+  margin: 10px;
+  box-shadow: 2px solid black;
+  font-size: medium;
 
+ }
 footer a {
   text-decoration: none;
   padding: 20px;
@@ -1250,7 +1297,15 @@ footer a {
   text-decoration: none;
   cursor: default;
 }
+.section div:hover{
+box-shadow: #1c1d1e;
+}
 
+.section div p{
+  color: #ffffff;
+  font-weight: 700;
+  font-size: medium;
+}
 @media(max-width:712px) {
   .main-footer {
     flex-direction: column;
