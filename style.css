@@ -376,24 +376,26 @@ h1, h2, h3 {
     right: 0px;
     height: -webkit-fill-available;
     top: 0;
-    background-color: rgb(0 0 0);
+    background: linear-gradient(0deg, #1c1d1e, #333);
     filter: opacity(0.92);
     backdrop-filter: blur(10px);
-    border: 2px solid rgba(255, 255, 255, .2);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); 
     border-radius: 2%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 50%;
-    padding: 5% 0%;
+    padding: 0 20px; 
     transform: translateX(100%);
     transition: transform 0.5s ease-in;
     top: 0;
     height: -webkit-fill-available;
-    width: 70%;
+    width: 100%;
     justify-content: center;
     filter: opacity(0.9);
+    z-index: 1000; 
+    left: 0; 
   }
 
   .div-navbar a:not(.a-name) {
@@ -414,10 +416,20 @@ h1, h2, h3 {
     border: .5px solid;
   }
 
-  .div-navbar a {
+  navbar .div-navbar a {
+    color: #f4f7fb; 
+    font-size: 18px; 
+    margin: 0 15px; 
+    text-decoration: none; 
+    transition: color 0.3s ease, transform 0.3s ease; 
     opacity: 0;
   }
-
+  
+  .navbar .div-navbar a:hover {
+    color: #edbb00; 
+    transform: scale(1.1); 
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5); 
+  }
   .burger {
     display: block;
     cursor: pointer;
@@ -570,6 +582,19 @@ section {
   background: linear-gradient(90deg, rgba(6, 55, 193, 1) 36%, rgba(255, 255, 255, 0) 100%);
 }
 
+.logo {
+  display: flex;
+  align-items: center; 
+}
+
+.logo img {
+  width: 100px;
+  transition: transform 0.3s ease;
+}
+
+.logo img:hover {
+  transform: scale(1.1); 
+}
 .stats-table .card:hover {
   transform: translateY(-0.5rem);
 }
@@ -913,6 +938,7 @@ main.darkTheme {
 
 }
 
+
 .pop-up>span {
   position: absolute;
   top: 100px;
@@ -1157,6 +1183,22 @@ main.darkTheme {
   }
 }
 
+@media (max-width: 768px) {
+  #navbar {
+    flex-direction: column; 
+    height: auto; /* Adjust height */
+  }
+
+  .navbar .div-navbar {
+    flex-direction: column; 
+    align-items: center; 
+  }
+
+
+  .navbar .div-navbar a {
+    margin: 10px 0; 
+  }
+}
 /*  */
 .main-info.darkTheme {
   background: #1f1f1f;
