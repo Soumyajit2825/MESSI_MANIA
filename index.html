@@ -407,6 +407,52 @@
       }
 
     }
+
+
+  /*Quize Area*/
+  .quiz-container {
+    max-width: 500px;
+    margin: 50px auto;
+    background: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+}
+
+h1 {
+    color: #FFD700;
+}
+
+.question {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.options button {
+    display: block;
+    width: 100%;
+    margin: 5px 0;
+    padding: 10px;
+    background: #FFD700;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.options button:hover {
+    background: #FFA500;
+}
+
+.result {
+    margin-top: 20px;
+    font-size: 22px;
+    font-weight: bold;
+}
+html {
+    scroll-behavior: smooth;
+}
+
   </style>
 </head>
 
@@ -463,6 +509,7 @@
         <a href="#VIDEOS" class="a-photos"><i class="fa fa-photo"></i>&nbsp;Videos</a>
 
         <a href="#PHOTOS" class="a-photos"><i class="fa fa-photo"></i>&nbsp;Photos</a>
+        <a href="#Quize">Quize</a>
 
         <a href="contact.html" class="a-photos"><i class="fa fa-photo"></i>&nbsp;Contact</a>
         <a href="#MORE" class="a-more"><i class="fa fa-info-circle"></i>&nbsp;More</a>
@@ -2926,7 +2973,17 @@
         </button> 
        </div>
     </section>
+  <!--Quize Area-->
+  <section class ="quize-area" id="Quize">
+    <div class="quiz-container">
+      <h1>⚽ Messi Trivia Quiz</h1>
+      <p class="question"></p>
+      <div class="options"></div>
+      <p class="result"></p>
+      <button onclick="nextQuestion()">Next Question</button>
+    </div>
 
+  </section>
 
   </main>
   <footer>
@@ -2997,6 +3054,7 @@
 <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 <script src="./app.js"></script>
 <script src="./timeline.js"></script>
+<script src="quize.js"></script>
 </body>
 
 <script>
@@ -3013,6 +3071,8 @@
     });
   }
   AOS.init();
+
+
 </script>
 
 </html>
