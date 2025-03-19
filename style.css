@@ -1214,8 +1214,107 @@ main.darkTheme {
   font-size: 2rem;
   color: #E1306C;
 }
+.messi-footer-ultimate {
+  background-color: #0D1117;
+  color: #FFFFFF;
+  font-family: 'Arial', sans-serif;
+  padding: 50px 20px 20px 20px;
+}
 
-footer {
+.messi-footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.messi-footer-container h3 {
+  color: #feca1b;
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+.messi-footer-about p,
+.messi-footer-newsletter p {
+  color: #c9d1d9;
+  line-height: 1.6;
+}
+
+.messi-footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.messi-footer-links ul li {
+  margin-bottom: 10px;
+}
+
+.messi-footer-links ul li a {
+  color: #c9d1d9;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.messi-footer-links ul li a:hover {
+  color: #feca1b;
+}
+
+.messi-footer-newsletter form {
+  display: flex;
+  flex-direction: column;
+}
+
+.messi-footer-newsletter input[type="email"] {
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+
+.messi-footer-newsletter button {
+  padding: 10px;
+  background-color: #feca1b;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #0D1117;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.messi-footer-newsletter button:hover {
+  background-color: #ffd700;
+}
+
+.messi-footer-social .social-icons {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.messi-footer-social .social-icons img {
+  width: 32px;
+  height: 32px;
+  transition: transform 0.3s;
+}
+
+.messi-footer-social .social-icons img:hover {
+  transform: scale(1.2);
+}
+
+.messi-footer-bottom {
+  border-top: 1px solid #30363d;
+  text-align: center;
+  margin-top: 40px;
+  padding-top: 20px;
+  color: #777;
+  font-size: 14px;
+}
+
+
+/* footer {
   background-color: #333;
   overflow: hidden;
   background-color: #333;
