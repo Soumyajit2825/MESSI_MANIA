@@ -845,12 +845,7 @@ main.darkTheme {
   margin: 0 auto;
 }
 
-.secondary_heading {
-  font-family: "Oswald", serif;
-  color: #ffffff;
-  border-radius: 15px;
-  /* added border radius */
-}
+
 
 .secondary_heading {
   font-family: "Oswald", serif;
@@ -859,9 +854,16 @@ main.darkTheme {
   /* added border radius */
 }
 
+.social_link_wikipedia:active{
+  color: #f4efef;
+  background-color: #424141;
+}
+ h4{
+  color: #3078e2;
+}
 /*adding the hover effect on heading */
 .secondary_heading:hover {
-  background-color: rgba(0, 0, 0, 0.500);
+  background-color: rgba(31, 29, 29, 0.5);
 }
 
 .secondary_heading.darkTheme:hover {
@@ -971,20 +973,24 @@ main.darkTheme {
 
 .info-area .social_link_wikipedia:before {
   background: #d6d6d6;
-  background: radial-gradient(circle at 30% 107%, #ffffff 0%, #c7c7c7 5%, #898989 45%, #bebebe 60%, #686868 90%);
+  background: radial-gradient(circle at 30% 107%, #ffffff 0%, #c7c7c7 5%, #a7a5a5 45%, #bebebe 60%, #686868 90%);
 }
 
 .info-area .social_link_instagram:before {
   background: #d6249f;
-  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdd997 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
 }
 
 .info-area .social_link_facebook:before {
   background: #337ab7;
-  background: radial-gradient(circle at 30% 107%, #ffffff 0%, #c7c7c7 5%, #498efd 45%, #8cd9f0 60%, #285AEB 90%);
+  background: radial-gradient(circle at 30% 107%, #ffffff 0%, #c7c7c7 5%, #498efd 45%, #8cd9f0 60%, #1341c8 90%);
 }
 
 
+.title
+{
+  color: #063592;
+}
 .info-area .social_link:hover:before {
   width: 110%;
   opacity: 1;
@@ -1154,15 +1160,17 @@ main.darkTheme {
 }
 
 .info-area h5 {
-  color: #a50044;
+  color: #480622;
   font-family: 'Montserrat', sans-serif;
   font-size: 20px;
   font-weight: bold;
+  text-shadow: #181818;
 }
 
 .info-area h4 {
-  color: #db0030;
+  color: #380ab6;
   font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
 }
 
 .info-area p {
@@ -1212,7 +1220,7 @@ main.darkTheme {
 .achivements-div h3 {
   font-family: "Alkalami", serif;
   font-size: 2rem;
-  color: #E1306C;
+  color: #0a0adf;
 }
 
 footer {
