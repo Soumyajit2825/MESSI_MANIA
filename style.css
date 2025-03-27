@@ -905,7 +905,7 @@ main.darkTheme {
 
 /* added this hover effect on the CSS of the links , such that the underlined is also in the same color with the text*/
 .extra-info a:hover {
-  color: white;
+  color: rgb(225, 218, 218);
 }
 
 
@@ -980,7 +980,7 @@ main.darkTheme {
 }
 
 .info-area .social_link_facebook:before {
-  background: #337ab7;
+  background: #2880ce;
   background: radial-gradient(circle at 30% 107%, #ffffff 0%, #c7c7c7 5%, #498efd 45%, #8cd9f0 60%, #285AEB 90%);
 }
 
@@ -1257,7 +1257,9 @@ main.darkTheme {
 }
 
 .messi-footer-links ul li a:hover {
-  color: #feca1b;
+  color: #e3ae11;
+  font-weight: 600;
+  text-shadow: #181818;
 }
 
 .messi-footer-newsletter form {
@@ -1285,27 +1287,32 @@ main.darkTheme {
 }
 
 .messi-footer-newsletter button:hover {
-  background-color: #ffd700;
+  background-color: red;
+  color:#fff;
+  font-weight: 500;
 }
 
 .messi-footer-social .social-icons {
   display: flex;
   gap: 15px;
   align-items: center;
+  
 }
 
 .messi-footer-social .social-icons img {
-  width: 32px;
-  height: 32px;
+  width: 35px;
+  height: 35px;
   transition: transform 0.3s;
+  opacity: 0.7;
 }
 
 .messi-footer-social .social-icons img:hover {
   transform: scale(1.2);
+  opacity: 1;
 }
 
 .messi-footer-bottom {
-  border-top: 1px solid #30363d;
+  border-top: 1px solid #1b1e21;
   text-align: center;
   margin-top: 40px;
   padding-top: 20px;
@@ -1364,7 +1371,7 @@ footer a {
     height: inherit;
     /* width: fit-content; */
     /* padding-right: 0; */
-  }
+  
 
   .extra-info {
     display: flex;
@@ -1373,7 +1380,7 @@ footer a {
     /* width: 100%; */
     /* height: 40%; */
   }
-}
+
 
 ::-webkit-scrollbar {
   width: 10px;
