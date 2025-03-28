@@ -173,17 +173,19 @@ body {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .timeline {
   position: relative;
+  overflow: hidden !important;
+  white-space: nowrap;
 }
 
 .timeline .arrows {
   position: absolute;
   top: 35%;
-  left: 0;
   width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   transform: translateY(-50%);
-  padding: 0; 
+  pointer-events: none;
 }
 
 .timeline .arrows .arrow {
@@ -192,21 +194,25 @@ body {
   cursor: pointer;
   display: flex;
   align-items: center;
+  pointer-events: auto;
 }
 
 .timeline .arrows .arrow__prev {
-  margin-left: 10px; 
+  position: absolute;
+  left: 0;
+  margin-left: 10px;
 }
 
 .timeline .arrows .arrow__next {
-  margin-right: 10px; 
+  position: absolute;
+  right: 0;
+  margin-right: 10px;
 }
 
 .timeline .disabled {
   opacity: 0.5;
   cursor: not-allowed;
 }
-
 
 
 /* GENERAL MEDIA QUERIES

@@ -126,10 +126,6 @@
       });
     }
   })();
-
-  
-  
-  
   
 document.addEventListener("DOMContentLoaded", function () {
     const timeline = document.querySelector(".timeline ol");
