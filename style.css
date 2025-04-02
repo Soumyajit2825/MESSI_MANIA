@@ -222,7 +222,7 @@ header {
   border: none;
   padding: 0 20px;
   background: rgb(0, 0, 0);
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 50%, rgba(0, 0, 0, 1) 100%);
+  background: linear-gradient(0deg, rgba(21, 20, 20, 0) 0%, rgba(0, 0, 0, 0.8) 50%, rgba(0, 0, 0, 1) 100%);
 }
 
 .nav-2 {
@@ -907,7 +907,7 @@ main.darkTheme {
 
 /* added this hover effect on the CSS of the links , such that the underlined is also in the same color with the text*/
 .extra-info a:hover {
-  color: white;
+  color: rgb(225, 218, 218);
 }
 
 
@@ -921,6 +921,33 @@ main.darkTheme {
   justify-content: center;
   flex-wrap: wrap;
 }
+.messi-footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.messi-footer-container h3 {
+  color: #feca1b;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+/* === SOCIAL ICONS === */
+.messi-footer-social .social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.messi-footer-social .social-icons img {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s, filter 0.3s;
+  filter: brightness(70%);
+}
+
 
 .info-area .social_link {
   display: flex;
@@ -1144,6 +1171,38 @@ main.darkTheme {
 
 /*added hover CSS effect , filter(grayscale) effect */
 
+.facts-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 40px;
+  text-align: center;
+}
+
+.fact-card {
+  background: linear-gradient(145deg, #ffffff, #e6e6e6);
+  box-shadow: 5px 5px 10px #c1c1c1, -5px -5px 10px #ffffff;
+  padding: 20px;
+  border-radius: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.fact-card:hover {
+  transform: scale(1.05);
+  box-shadow: 7px 7px 15px #b1b1b1, -7px -7px 15px #ffffff;
+}
+
+.fact-card h3 {
+  color: #e1306c;
+  font-size: 1.5rem;
+  font-family: "Alkalami", serif;
+}
+
+.fact-card p {
+  color: #383736;
+  font-size: 1rem;
+  font-weight: 500;
+}
 
 .info-area h2 {
   width: 400px;
@@ -1223,11 +1282,11 @@ main.darkTheme {
   color: #0a0adf;
 }
 .messi-footer-ultimate {
-  background-color: #0D1117;
   color: #FFFFFF;
   font-family: 'Arial', sans-serif;
-  padding: 50px 20px 20px 20px;
-}
+   padding: 50px 20px;
+   background: linear-gradient(135deg, #0d1117, #1c1f26);
+  }
 
 .messi-footer-container {
   display: grid;
@@ -1235,12 +1294,13 @@ main.darkTheme {
   gap: 40px;
   max-width: 1200px;
   margin: auto;
-}
+  }
 
 .messi-footer-container h3 {
   color: #feca1b;
   margin-bottom: 15px;
   font-size: 20px;
+  
 }
 
 .messi-footer-about p,
@@ -1265,7 +1325,9 @@ main.darkTheme {
 }
 
 .messi-footer-links ul li a:hover {
-  color: #feca1b;
+  color: #e3ae11;
+  font-weight: 600;
+  text-shadow: #181818;
 }
 
 .messi-footer-newsletter form {
@@ -1287,41 +1349,83 @@ main.darkTheme {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  color: #0D1117;
+  color: #0d1117;
   font-weight: bold;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s ease-in-out;
 }
 
 .messi-footer-newsletter button:hover {
-  background-color: #ffd700;
+  background-color: red;
+  color:#fff;
+  font-weight: 500;
 }
 
 .messi-footer-social .social-icons {
   display: flex;
   gap: 15px;
   align-items: center;
+  
 }
 
 .messi-footer-social .social-icons img {
-  width: 32px;
-  height: 32px;
-  transition: transform 0.3s;
-}
-
-.messi-footer-social .social-icons img:hover {
-  transform: scale(1.2);
+  opacity: 0.7;
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s, filter 0.3s;
+  filter: brightness(70%);
 }
 
 .messi-footer-bottom {
-  border-top: 1px solid #30363d;
   text-align: center;
+  border-top: 1px solid #333;
   margin-top: 40px;
   padding-top: 20px;
-  color: #777;
+  color: #888;
   font-size: 14px;
 }
 
 
+/* === NEWSLETTER FORM === */
+.messi-footer-newsletter form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.messi-footer-newsletter input {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  background: #ffffff;
+  color: #000;
+}
+
+
+.messi-footer-newsletter button:hover {
+  background-color: red;
+  color: white;
+}
+
+
+.messi-footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.messi-footer-links ul li {
+  margin-bottom: 10px;
+}
+
+.messi-footer-links ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  transition: color 0.3s ease;
+}
+
+.messi-footer-links ul li a:hover {
+  color: #feca1b;
+}
 /* footer {
   background-color: #333;
   overflow: hidden;
@@ -1372,7 +1476,7 @@ footer a {
     height: inherit;
     /* width: fit-content; */
     /* padding-right: 0; */
-  }
+  
 
   .extra-info {
     display: flex;
@@ -1381,7 +1485,7 @@ footer a {
     /* width: 100%; */
     /* height: 40%; */
   }
-}
+
 
 ::-webkit-scrollbar {
   width: 10px;
