@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms and Conditions - MessiMania</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alkalami&family=Mukta&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ultra&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Theme Variables */
+        .light {
+            --bodyBg: #fff;
+            --sectionEven: #fff;
+            --heading2: #fff;
+            --imageBg: #fff;
+            --tdBg: #fff;
+            --mainText: #333;
+        }
+
+        .dark {
+            --bodyBg: #333;
+            --sectionEven: #333;
+            --heading2: #333;
+            --imageBg: #333;
+            --tdBg: #333;
+            --mainText: #fff;
+        }
+
+        /* General Styles */
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin-top: 5%;
+            background-color: var(--bodyBg);
+            color: var(--mainText);
+            overflow-x: hidden;
+        }
+
+        /* Navbar */
+        #navbar {
+            position: fixed;
+            z-index: 1000;
+            height: 120px;
+            top: 0;
+            left: 0;
+            width: 100%;
+            margin: 0;
+            border: none;
+            padding: 0 20px;
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 50%, rgba(0, 0, 0, 1) 100%);
+        }
+
+        .nav-2 {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            width: max-content;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            width: 100px;
+        }
+
+        .logo a {
+            text-decoration: none;
+            color: white;
+            font-family: 'Fuzzy Bubbles', sans-serif;
+            font-size: 30px;
+        }
+
+        .div-navbar {
+            width: 60%;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+
+        .div-navbar a {
+            text-decoration: none;
+            color: white;
+            font-size: 21px;
+            font-weight: 500;
+        }
+
+        .div-navbar a:hover {
+            text-shadow: 0 0 20px white;
+        }
+
+        .switch-container div {
+            background-image: url("./Image/stars.webp");
+            display: flex;
+            width: 75px;
+            height: 35px;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 6px;
+            background-color: rgb(114, 33, 75);
+            border-radius: 50px;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .switch-container div i {
+            font-size: 18px;
+        }
+
+        .switch-container div .fa-sun {
+            color: gold;
+            transition: transform 0.8s, opacity 0.8s;
+        }
+
+        .switch-container div .fa-moon {
+            color: #fff;
+            transition: transform 0.8s, opacity 0.8s;
+        }
+
+        .switch-container div .ball {
+            display: none;
+        }
+
+        .burger {
+            display: none;
+            cursor: pointer;
+        }
+
+        .burger div {
+            width: 25px;
+            height: 3px;
+            background-color: rgb(226, 226, 226);
+            margin: 5px;
+            transition: all 0.3s ease;
+        }
+
+        .bar {
+            color: white;
+            font-size: 30px;
+            float: right;
+            line-height: 80px;
+            margin-right: 40px;
+            cursor: pointer;
+            display: none;
+        }
+
+        /* Main Content */
+        main {
+            padding: 0 20px;
+            min-height: 100vh;
+        }
+
+        main.darkTheme {
+            background-color: #212121;
+            color: #fff;
+        }
+
+        .terms-conditions {
+            max-width: 800px;
+            margin: 150px auto 50px;
+            padding: 20px;
+            background: linear-gradient(145deg, #fefbfb, #d5d4d4);
+            box-shadow: 7px 7px 19px #a6a5a5, -7px -7px 19px #ffffff;
+            border-radius: 23px;
+        }
+
+        .darkTheme .terms-conditions {
+            background: #1f1f1f;
+            box-shadow: 5px 5px 10px #1b1b1b, -5px -5px 10px #232323;
+            color: #fff;
+        }
+
+        h1 {
+            font-size: 40px;
+            color: #ce2626;
+            text-align: center;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        h2 {
+            font-size: 25px;
+            color: #1f2266;
+            margin: 20px 0 10px;
+            font-weight: 600;
+        }
+
+        .darkTheme h2 {
+            color: #feca1b;
+        }
+
+        p {
+            font-size: 16px;
+            margin-bottom: 15px;
+            color: var(--mainText);
+        }
+
+        ul {
+            margin-left: 20px;
+            margin-bottom: 15px;
+            list-style: square;
+        }
+
+        ul li {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: #feca1b;
+        }
+
+        /* Small Horizontal Footer */
+        footer {
+            background-color: #0D1117;
+            color: #FFFFFF;
+            padding: 20px;
+            text-align: center;
+            font-size: 16px;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 10px;
+        }
+
+        .footer-links a {
+            color: #c9d1d9;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-links a:hover {
+            color: #feca1b;
+        }
+
+        .footer-bottom {
+            color: #777;
+            font-size: 14px;
+        }
+
+        /* Animation for Navbar Links */
+        @keyframes navLinkFade {
+            from {
+                opacity: 0;
+                transform: translateX(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        /* Responsive Design */
+        @media screen and (max-width: 945px) {
+            .div-navbar {
+                position: fixed;
+                right: 0;
+                top: 0;
+                height: 100vh;
+                background-color: rgba(0, 0, 0, 0.92);
+                backdrop-filter: blur(10px);
+                border: 2px solid rgba(255, 255, 255, 0.2);
+                border-radius: 2%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 70%;
+                padding: 5% 0;
+                transform: translateX(100%);
+                transition: transform 0.5s ease-in;
+            }
+
+            .div-navbar.nav-active {
+                transform: translateX(0%);
+            }
+
+            .div-navbar a {
+                margin: 10px 15px;
+                width: 100%;
+                padding: 10px 20px;
+                background: #181818;
+                border-radius: 25px;
+                text-shadow: 0 0 6px white;
+                border: 0.5px solid white;
+                opacity: 0;
+            }
+
+            .div-navbar.nav-active a {
+                animation: navLinkFade 0.5s ease forwards;
+            }
+
+            .burger {
+                display: block;
+            }
+
+            .toggle .line1 {
+                transform: rotate(-45deg) translate(-5px, 6px);
+            }
+
+            .toggle .line2 {
+                opacity: 0;
+            }
+
+            .toggle .line3 {
+                transform: rotate(45deg) translate(-5px, -6px);
+            }
+
+            .logo img {
+                width: 60px;
+            }
+
+            .logo a {
+                font-size: 20px;
+            }
+        }
+
+        @media screen and (max-width: 745px) {
+            .terms-conditions {
+                margin: 120px 10px 30px;
+                padding: 15px;
+            }
+
+            h1 {
+                font-size: 30px;
+            }
+
+            h2 {
+                font-size: 20px;
+            }
+
+            p, ul li {
+                font-size: 14px;
+            }
+
+            .footer-links {
+                flex-direction: column;
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav id="navbar" class="navbar">
+        <nav class="nav-2">
+            <div class="logo">
+                <img src="./Image/cropped-messi-logo-01.webp" alt="Messi">
+                <a href="#" class="a-name">Messi Mania</a>
+            </div>
+            <div class="div-navbar">
+                <a href="#HOME" class="a-home"><i class="fa fa-home"></i> Home</a>
+                <a href="#STATS" class="a-stats"><i class="fa fa-trophy" aria-hidden="true"></i> Stats</a>
+                <a href="#VIDEOS" class="a-photos"><i class="fa fa-photo"></i> Videos</a>
+                <a href="#PHOTOS" class="a-photos"><i class="fa fa-photo"></i> Photos</a>
+                <a href="#Quize">Quize</a>
+                <a href="contact.html" class="a-photos"><i class="fa fa-photo"></i> Contact</a>
+                <a href="#MORE" class="a-more"><i class="fa fa-info-circle"></i> More</a>
+                <a href="/privacy-policy">Privacy Policy</a>
+                <a href="/terms-and-conditions">Terms & Conditions</a>
+            </div>
+            <div class="bar"><i class="fa-solid fa-bars"></i></div>
+            <div class="switch-container">
+                <div class="box">
+                    <i class="fas fa-sun" id="sun"></i>
+                    <i class="fas fa-moon" id="moon"></i>
+                    <span class="ball"></span>
+                </div>
+            </div>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <section class="terms-conditions">
+            <h1>Terms and Conditions</h1>
+            <p><em>Last Updated: April 05, 2025</em></p>
+            <p>Welcome to MessiMania! These Terms and Conditions ("Terms") govern your use of <a href="https://www.messimania.com">www.messimania.com</a> (the "Site"), operated by MessiMania. By accessing or using the Site, you agree to be bound by these Terms. If you do not agree, please do not use the Site.</p>
+
+            <h2>1. Use of the Site</h2>
+            <p>You agree to use the Site only for lawful purposes and in a manner consistent with all applicable laws and regulations. You may not:</p>
+            <ul>
+                <li>Use the Site to harm, harass, or infringe on the rights of others.</li>
+                <li>Attempt to gain unauthorized access to any part of the Site or its systems.</li>
+                <li>Reproduce, duplicate, or sell any content from the Site without permission.</li>
+            </ul>
+
+            <h2>2. Intellectual Property</h2>
+            <p>All content on the Site, including text, images, logos, and videos, is the property of MessiMania or its licensors and is protected by copyright and other intellectual property laws. You may not use, copy, or distribute this content without prior written consent.</p>
+
+            <h2>3. User Content</h2>
+            <p>If you submit content (e.g., comments, reviews), you grant MessiMania a non-exclusive, royalty-free, worldwide license to use, modify, and display that content. You are responsible for ensuring your content does not violate any laws or third-party rights.</p>
+
+            <h2>4. Limitation of Liability</h2>
+            <p>MessiMania provides the Site "as is" and does not guarantee its accuracy, reliability, or availability. To the fullest extent permitted by law, MessiMania is not liable for any damages arising from your use of the Site, including but not limited to indirect, incidental, or consequential damages.</p>
+
+            <h2>5. Third-Party Links</h2>
+            <p>The Site may contain links to third-party websites. MessiMania is not responsible for the content, accuracy, or practices of these sites. Accessing them is at your own risk.</p>
+
+            <h2>6. Changes to These Terms</h2>
+            <p>We may update these Terms from time to time. Changes will be posted on this page with an updated date. Your continued use of the Site after changes constitutes acceptance of the revised Terms.</p>
+
+            <h2>7. Termination</h2>
+            <p>MessiMania reserves the right to suspend or terminate your access to the Site at any time, with or without notice, for any reason, including violation of these Terms.</p>
+
+            <h2>8. Governing Law</h2>
+            <p>These Terms are governed by the laws of [Your Jurisdiction, e.g., "the State of California, USA"]. Any disputes will be resolved in the courts of [Your Jurisdiction].</p>
+
+            <h2>9. Contact Us</h2>
+            <p>If you have questions about these Terms, please contact us at <a href="mailto:support@messimania.com">support@messimania.com</a>.</p>
+        </section>
+    </main>
+
+    <!-- Small Horizontal Footer -->
+    <footer>
+        <div class="footer-links">
+            <a href="#HOME">Home</a>
+            <a href="/privacy-policy">Privacy Policy</a>
+            <a href="/terms-and-conditions">Terms & Conditions</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 MessiMania. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        const navIcon = document.getElementById("nav-icon");
+        const navBar = document.querySelector(".navbar");
+        const ball = document.querySelector(".ball");
+        const moon = document.querySelector(".fa-moon");
+        const sun = document.querySelector(".fa-sun");
+        const _switch = document.querySelector(".switch-container");
+        const box = document.querySelector(".box");
+        let main = document.getElementsByTagName('main')[0];
+
+        navIcon?.addEventListener("click", () => {
+            navBar.classList.toggle("navBarMobile");
+            navIcon.classList.toggle("open");
+        });
+
+        let ltheme = localStorage.getItem("theme");
+        let theme = ltheme === null ? "light" : ltheme;
+
+        _switch?.addEventListener("click", () => {
+            if (theme === "light") {
+                sun.style.transform = "translateX(45px) rotate(250deg)";
+                sun.style.opacity = "0";
+                moon.style.transform = "translateX(-45px) rotate(350deg)";
+                moon.style.opacity = "1";
+                applyDarkTheme();
+                theme = "dark";
+            } else {
+                sun.style.transform = "translateX(0)";
+                sun.style.opacity = "1";
+                moon.style.transform = "translateX(0)";
+                moon.style.opacity = "0";
+                removeDarkTheme();
+                theme = "light";
+            }
+            localStorage.setItem("theme", theme);
+        });
+
+        window.onload = () => {
+            if (ltheme === "light") {
+                sun.style.transform = "translateX(0)";
+                sun.style.opacity = "1";
+                moon.style.transform = "translateX(0)";
+                moon.style.opacity = "0";
+                removeDarkTheme();
+            }
+            if (ltheme === "dark") {
+                sun.style.transform = "translateX(45px)";
+                sun.style.opacity = "0";
+                moon.style.transform = "translateX(-45px)";
+                moon.style.opacity = "1";
+                applyDarkTheme();
+            }
+            document.body.className = ltheme || "light";
+        };
+
+        function applyDarkTheme() {
+            main.classList.add("darkTheme");
+            document.querySelector(".terms-conditions").classList.add("darkTheme");
+        }
+
+        function removeDarkTheme() {
+            main.classList.remove("darkTheme");
+            document.querySelector(".terms-conditions").classList.remove("darkTheme");
+        }
+
+        function navSlide() {
+            const burger = document.querySelector(".burger");
+            const nav = document.querySelector(".div-navbar");
+            const navLinks = document.querySelectorAll(".div-navbar a");
+
+            burger.addEventListener("click", () => {
+                nav.classList.toggle("nav-active");
+                navLinks.forEach((link, index) => {
+                    if (link.style.animation) {
+                        link.style.animation = "";
+                    } else {
+                        link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.5}s`;
+                    }
+                });
+                burger.classList.toggle("toggle");
+            });
+        }
+
+        navSlide();
+    </script>
+</body>
+</html>
