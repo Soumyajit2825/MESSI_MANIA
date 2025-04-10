@@ -1013,11 +1013,6 @@ main.darkTheme {
   background: radial-gradient(circle at 30% 107%, #ffffff 0%, #c7c7c7 5%, #498efd 45%, #8cd9f0 60%, #1341c8 90%);
 }
 
-
-.title
-{
-  color: #063592;
-}
 .info-area .social_link:hover:before {
   width: 110%;
   opacity: 1;
@@ -1219,7 +1214,6 @@ main.darkTheme {
 }
 
 .info-area h5 {
-  color: #480622;
   font-family: 'Montserrat', sans-serif;
   font-size: 20px;
   font-weight: bold;
@@ -1227,7 +1221,6 @@ main.darkTheme {
 }
 
 .info-area h4 {
-  color: #380ab6;
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
 }
@@ -1279,7 +1272,7 @@ main.darkTheme {
 .achivements-div h3 {
   font-family: "Alkalami", serif;
   font-size: 2rem;
-  color: #0a0adf;
+  color: #FFD700;
 }
 .messi-footer-ultimate {
   color: #FFFFFF;
