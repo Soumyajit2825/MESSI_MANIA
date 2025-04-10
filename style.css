@@ -1567,6 +1567,14 @@ footer a {
     padding-right: 0;
   }
 
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
   .stats-table {
     z-index: 1;
   }
@@ -1618,6 +1626,38 @@ footer a {
   #nav-icon span:nth-child(4) {
     top: 18px;
   }
+
+
+  footer {
+    background-color: #333; /* Change to your preferred color */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.social-links {
+    margin-top: 10px;
+}
+
+.social-links a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.messi-footer-social .social-links img {
+    width: 35px; /* Adjust size as needed */
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.messi-footer-social .social-links a:hover img {
+    transform: scale(1.1); /* Slightly enlarge on hover */
+}
 
   #nav-icon.open span:nth-child(1) {
     top: 18px;
