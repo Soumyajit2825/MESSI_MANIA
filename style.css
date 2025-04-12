@@ -764,6 +764,54 @@ main.darkTheme {
   z-index: 1;
 }
 
+.photo1:hover{
+  box-shadow: 0 4px 8px #000;
+}
+
+.photo2:hover{
+  box-shadow: 0 4px 8px #000;
+}
+
+.photo3:hover{
+  box-shadow: 0 4px 8px #000;
+}
+
+.photo4:hover{
+  box-shadow: 0 4px 8px #000;
+}
+
+.photo5:hover{
+  box-shadow: 0 4px 8px #000;
+}
+
+.photo6:hover{
+  box-shadow: 0 4px 8px #000;
+}
+
+.photo7:hover{
+  box-shadow: 0 4px 8px #000;
+}
+
+.photo8:hover{
+  box-shadow: 0 4px 8px #000;
+}
+
+.photo9:hover{
+  box-shadow: 0 4px 8px #000;
+}
+
+.photo10:hover{
+  box-shadow: 0 4px 8px #000;
+}
+
+.photo11:hover{
+  box-shadow: 0 4px 8px #000;
+}
+
+.photo12:hover{
+  box-shadow: 0 4px 8px #000;
+}
+
 .top-scroll {
   display: none;
   position: fixed;
