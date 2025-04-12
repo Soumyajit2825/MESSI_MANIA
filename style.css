@@ -454,16 +454,22 @@ section {
   /* height: 100vh; */
   width: 100%;
   background: rgb(56, 209, 255);
-  background: linear-gradient(0deg, rgba(56, 209, 255, 1) 0%, rgba(255, 255, 255, 0) 90%);
+  background: linear-gradient(0deg, rgba(56, 209, 255, 1) 0%, rgb(11, 80, 219) 50%, rgba(255, 255, 255, 0) 90%);
   overflow: hidden;
   position: relative;
-
+    padding: 50px 0; 
+    text-align: center; 
 }
 
 .stats-messi {
   width: 100%;
   position: absolute;
   height: inherit;
+  border-radius: 10px; 
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); 
+  padding: 20px; /* Padding inside the card */
+  margin: 20px; 
+  transition: transform 0.3s ease; 
 }
 
 .stats-messi>img {
@@ -473,14 +479,14 @@ section {
 
 #stats-messi-image {
   position: relative;
-  top: 40px;
+  top: 25px;
   z-index: 1;
   display: unset;
 }
 
 #stats-messi-image2 {
   position: absolute;
-  top: 40px;
+  top: 45px;
   z-index: 1;
   display: none;
 }
@@ -499,6 +505,11 @@ section {
 }
 
 
+.stat-item i {
+  font-size: 2rem; 
+  color: #f45b69; 
+  margin-bottom: 10px; 
+}
 
 .stats-main-content {
   margin: 0 auto;
@@ -540,11 +551,12 @@ section {
   overflow: hidden;
   transition: 0.2s ease;
   display: flex;
-  background: linear-gradient(90deg, rgba(6, 55, 193, 1) 36%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(90deg, rgb(231, 102, 3) 36%,rgb(245, 182, 10) 52%,red 100%);
 }
 
 .stats-table .card:hover {
   transform: translateY(-0.5rem);
+  background: linear-gradient(90deg, rgb(21, 202, 226) 36%,rgb(14, 219, 41) 52%,rgb(13, 39, 213) 100%);
 }
 
 .stats-table .card-heading {
@@ -552,6 +564,12 @@ section {
   font-weight: bolder;
   color: white;
   padding: 15px;
+}
+
+.stats-container {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center; 
 }
 
 .stats-table .card-text {
