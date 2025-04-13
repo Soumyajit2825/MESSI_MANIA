@@ -653,8 +653,8 @@ h2 {
 }
 
 .factsHead {
-  color: rgb(255, 46, 46) !important;
-  background-color: purple;
+  color: rgb(226, 9, 100) !important;
+  background-color: rgb(48, 19, 213);
   font-size: 40px;
   font-family: "Oswald", serif !important;
   margin: auto;
@@ -672,6 +672,8 @@ h2 {
 .factsHead:hover {
   border-radius: 15px;
   background-color: rgba(128, 0, 128, 0.500);
+  color: #000;
+  font-weight: 600;
 }
 
 /* external css: flickity.css */
@@ -1260,7 +1262,7 @@ main.darkTheme {
 }
 
 .fact-card {
-  background: linear-gradient(145deg, #ffffff, #e6e6e6);
+  background: linear-gradient(145deg, #acece2, #e8b9b9);
   box-shadow: 5px 5px 10px #c1c1c1, -5px -5px 10px #ffffff;
   padding: 20px;
   border-radius: 15px;
@@ -1269,11 +1271,11 @@ main.darkTheme {
 
 .fact-card:hover {
   transform: scale(1.05);
-  box-shadow: 7px 7px 15px #b1b1b1, -7px -7px 15px #ffffff;
+  box-shadow: 7px 7px 15px #101010, -7px -7px 15px #ffffff;
 }
 
 .fact-card h3 {
-  color: #e1306c;
+  color: #b5ed0f;
   font-size: 1.5rem;
   font-family: "Alkalami", serif;
 }
@@ -1284,6 +1286,45 @@ main.darkTheme {
   font-weight: 500;
 }
 
+.facts-section {
+  background-color: #f9f9f9; /* Light background for contrast */
+  padding: 40px 20px; /* Generous padding for breathing space */
+  border-radius: 8px; /* Rounded corners for a modern look */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.facts-title {
+  font-size: 2.5em; /* Larger font size for the title */
+  color: #333; /* Darker color for better readability */
+  text-align: center; /* Center the title */
+  margin-bottom: 30px; /* Space below the title */
+}
+
+.fact {
+  background-color: #fff; /* White background for each fact */
+  border: 1px solid #c3edea; /* Light border for separation */
+  border-radius: 5px; /* Rounded corners for each fact */
+  padding: 20px; /* Padding inside each fact */
+  margin-bottom: 20px; /* Space between facts */
+  transition: transform 0.3s; /* Smooth hover effect */
+}
+
+.fact:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.fact-title {
+  font-size: 1.8em; /* Slightly larger font for fact titles */
+  color: #007BFF; /* A vibrant color for titles */
+  margin-bottom: 10px; /* Space below the title */
+}
+
+.fact-description {
+  font-size: 1.1em; /* Readable font size for descriptions */
+  color: #555; /* Softer color for descriptions */
+  line-height: 1.6; /* Improved line height for readability */
+}
 .info-area h2 {
   width: 400px;
   /* background-color: rgba(9, 26, 86, 0.797); */
