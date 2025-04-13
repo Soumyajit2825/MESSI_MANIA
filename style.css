@@ -1556,6 +1556,51 @@ footer a {
     /* width: fit-content; */
     /* padding-right: 0; */
   
+    .god-of-football {
+      background-color: #f0f8ff; /* Light blue background for a fresh look */
+      padding: 40px 20px; /* Generous padding for breathing space */
+      border-radius: 10px; /* Rounded corners for a modern feel */
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+      text-align: center; /* Center the text */
+  }
+  
+  .section-title {
+      font-size: 2.5em; /* Larger font size for the title */
+      color: #2c3e50; /* Darker color for better readability */
+      margin-bottom: 20px; /* Space below the title */
+      font-family: 'Arial', sans-serif; /* Clean font for the title */
+  }
+  
+  .description {
+      max-width: 800px; /* Limit the width for better readability */
+      margin: 0 auto; /* Center the description */
+  }
+  
+  .description-text {
+      font-size: 1.2em; /* Readable font size for descriptions */
+      color: #34495e; /* Softer color for descriptions */
+      line-height: 1.6; /* Improved line height for readability */
+      margin-bottom: 20px; /* Space between paragraphs */
+      padding: 15px; /* Padding inside the description */
+      border-left: 5px solid #007BFF; /* Left border for emphasis */
+      background-color: #ffffff; /* White background for the description */
+      border-radius: 5px; /* Rounded corners for the description */
+      transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover effect */
+  }
+  
+  .description-text:hover {
+      transform: translateY(-3px); /* Lift effect on hover */
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+  }
+  
+  /* Optional: Add a background image or pattern */
+  .god-of-football {
+      background-image: url('path/to/your/background-image.jpg'); /* Background image */
+      background-size: cover; /* Cover the entire section */
+      background-position: center; /* Center the background image */
+      color: #fff; /* Change text color to white for contrast */
+  }
+  
 
   .extra-info {
     display: flex;
